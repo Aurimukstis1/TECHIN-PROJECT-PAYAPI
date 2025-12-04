@@ -6,9 +6,32 @@ body {
     background-color: #fbfcfe;
 }
 
+.section__article-finance{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+p{
+    text-align: center;
+    color: #6c8294;
+    font-family:  "Public Sans", sans-serif;
+}
+h3{
+    text-align: center;
+    color: #36536b;
+    font-family:  "Public Sans", sans-serif;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .pricing-page-header {
     margin-bottom: 2rem;
     margin-top: 4rem;
+    text-align: left;
 
     font-family: "DM Serif Display", serif;
     font-weight: 400;
@@ -36,11 +59,13 @@ body {
                 font-size: 32px;
                 line-height: 40px;
                 color: #ba4270;
+                text-align: left;
 
                 margin-bottom: 0;
             }
 
             & p {
+                text-align: left;
                 font-family: "Public Sans", sans-serif;
                 font-optical-sizing: auto;
                 font-weight: 400;
@@ -58,6 +83,7 @@ body {
                 color: #36536b;
                 font-size: 48px;
                 line-height: 56px;
+                text-align: left;
 
                 margin-bottom: 0;
                 margin-top: 0;
@@ -92,7 +118,8 @@ body {
         }
 
         & .pricing-item__button {
-            margin-top: 2rem;
+            margin-top: 1rem;
+            display: flex;
 
             & a {
                 padding-left: 1.5rem;
@@ -116,45 +143,63 @@ body {
                 }
             }
         }
+    }
+}
 
+@media screen and (min-width: 480px){
+    body {
+        width: 95%;
+        margin: auto;
+        background-color: #fbfcfe;
     }
 
+    .section__article-finance {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        gap: 0.5rem;
+    }
 }
 
-/* */
+@media screen and (max-width: 480px){
+    .pricing-page-box {
+        gap: 1rem;
+        flex-direction: column;
 
-.section__article-finance{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
+        & .pricing-item {
+            & .pricing-item__button {
+                width: 100%;
+                justify-content: center;
+            }
+
+            & .pricing-item__intro {
+                text-align: center;
+
+                & h3 {
+                    text-align: center;
+                }
+
+                & h2 {
+                    text-align: center;
+                }
+
+                & p {
+                    text-align: center;
+                }
+            }
+        }
+    }
 }
-p{
-    text-align: center;
-    color: #6c8294;
-    font-family:  "Public Sans", sans-serif;
-}
-h3{
-    text-align: center;
-    color: #36536b;
-    font-family:  "Public Sans", sans-serif;
-}
-img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-@media screen and (min-width: 480px){
-    .section__article-finance{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    gap: 0.5rem;
-}
-}
+
 @media screen and (min-width: 768px){
-    .section__article-finance{
+    body {
+        width: 90%;
+        margin: auto;
+        background-color: #fbfcfe;
+    }
+
+    .section__article-finance {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -163,16 +208,36 @@ img{
     }
 }
 
-header {
-    display: flex;
-    justify-content: center;
-    background-image: url(../images/shared/desktop/bg-pattern-circle.svg);
-    background-repeat: no-repeat;
-    background-position: 50% 124%;
-    
-}
+@media screen and (max-width: 768px) {
 
-.phone-mockup__prop {
-    height: 240px;
-    width: 128px;
+    .pricing-page-header {
+        text-align: center;
+    }
+
+    .pricing-page-box {
+        gap: 1rem;
+
+        & .pricing-item {
+            & .pricing-item__button {
+                width: 100%;
+                justify-content: center;
+            }
+
+            & .pricing-item__intro {
+                text-align: center;
+
+                & h3 {
+                    text-align: center;
+                }
+
+                & h2 {
+                    text-align: center;
+                }
+
+                & p {
+                    text-align: center;
+                }
+            }
+        }
+    }
 }
