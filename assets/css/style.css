@@ -1,4 +1,128 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    width: 80%;
+    margin: auto;
+    background-color: #fbfcfe;
+}
+
+.pricing-page-header {
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 56px;
+    line-height: 56px;
+    color: #36536b;
+}
+
+.pricing-page-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+    margin-bottom: 4rem;
+
+    & .pricing-item {
+
+        & .pricing-item__intro {
+            & h3 {
+                font-family: "DM Serif Display", serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 32px;
+                line-height: 40px;
+                color: #ba4270;
+
+                margin-bottom: 0;
+            }
+
+            & p {
+                font-family: "Public Sans", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+                color: #6c8294;
+                line-height: 28px;
+
+                margin-top: 0.5rem;
+            }
+
+            & h2 {
+                font-family: "DM Serif Display", serif;
+                font-weight: 400;
+                font-style: normal;
+                color: #36536b;
+                font-size: 48px;
+                line-height: 56px;
+
+                margin-bottom: 0;
+                margin-top: 0;
+            }
+        }
+
+        & .pricing-item__list {
+            border-top: 1px solid #6c8294;
+            border-bottom: 1px solid #6c8294;
+
+            & ul {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                padding-left: 1.5rem;
+
+                & li {
+                    font-family: "Public Sans", sans-serif;
+                    font-optical-sizing: auto;
+                    font-weight: 300;
+                    font-style: normal;
+                    color: #6c8294;
+                    list-style: none;
+                }
+
+                & #pricing-item__list-checkmark {
+                    font-weight: 400;
+                    color: #36536b;
+                    list-style-image: url("../images/shared/desktop/icon-check.svg");
+                }
+            }
+        }
+
+        & .pricing-item__button {
+            margin-top: 2rem;
+
+            & a {
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                background-color: rgba(0,0,0,0);
+                border: 2px solid #36536b;
+                width: fit-content;
+                border-radius: 2rem;
+                font-family: "Public Sans", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 600;
+                font-style: normal;
+                text-decoration: none;
+                color: #36536b;
+
+                &:hover {
+                    background-color: #36536b;
+                    color: #fbfcfe;
+                }
+            }
+        }
+
+    }
+
+}
+
+/* */
+
 .section__article-finance{
     display: flex;
     flex-direction: column;
