@@ -5,17 +5,17 @@
     justify-content: center;
     width: 100%;
 }
-p{
+.home__p-finances{
     text-align: center;
     color: #6c8294;
     font-family:  "Public Sans", sans-serif;
 }
-h3{
+.home__h3-finances{
     text-align: center;
     color: #36536b;
     font-family:  "Public Sans", sans-serif;
 }
-img{
+.home__img-finances{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -37,6 +37,7 @@ img{
     width: 100%;
     gap: 1.5rem;
 }
+}
 
 header {
     display: flex;
@@ -50,4 +51,18 @@ header {
 .phone-mockup__prop {
     height: 240px;
     width: 128px;
+}
+.about__h1-style{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6c8294;
+    font-family:  "Public Sans", sans-serif;
+    width: 100%;
+}
+.about__h2-style{
+    display: flex;
+    align-items: center;
+    color: #6c8294;
+    font-family:  "Public Sans", sans-serif;
 }
