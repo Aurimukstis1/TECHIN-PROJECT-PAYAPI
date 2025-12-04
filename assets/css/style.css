@@ -1,3 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap%27');
+.section__article-finance{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+p{
+    text-align: center;
+    color: #6c8294;
+    font-family:  "Public Sans", sans-serif;
+}
+h3{
+    text-align: center;
+    color: #36536b;
+    font-family:  "Public Sans", sans-serif;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (min-width: 480px){
+    .section__article-finance{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 0.5rem;
+}
+}
+@media screen and (min-width: 768px){
+    .section__article-finance{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 1.5rem;
+}
+
 header {
     display: flex;
     justify-content: center;
