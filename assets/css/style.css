@@ -1,1 +1,13 @@
+header {
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/shared/desktop/bg-pattern-circle.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 124%;
+    
+}
 
+.phone-mockup__prop {
+    height: 240px;
+    width: 128px;
+}
