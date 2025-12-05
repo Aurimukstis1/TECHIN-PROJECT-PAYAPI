@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-    width: 80%;
-    margin: auto;
-    background-color: #fbfcfe;
+    margin: 0;
+    background-color: #edf3f8;
 }
 
 .pricing-page-header {
@@ -129,11 +128,6 @@ body {
     justify-content: center;
     width: 100%;
 }
-p{
-    text-align: center;
-    color: #6c8294;
-    font-family:  "Public Sans", sans-serif;
-}
 h3{
     text-align: center;
     color: #36536b;
@@ -144,6 +138,60 @@ img{
     margin-left: auto;
     margin-right: auto;
 }
+
+header {
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/shared/desktop/bg-pattern-circle.svg);
+    background-repeat: no-repeat;
+    background-position: 50% -670px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.start-building__prop {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-inline: 24px;
+}
+.header-start {
+    text-align: center;
+    align-self: center;
+    color: #36536b;
+}
+.contact-us {
+    text-align: center;
+    color: #6c8294;
+    font-family:  "Public Sans", sans-serif;
+    text-decoration: none;
+}
+.contact-us-hyperlink {
+    text-decoration: none;
+    color: #6c8294;
+}
+.schedule-demo {
+    margin-top: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 19px;
+    font-weight: bold;
+    background-color: #ba4270;
+    color: #ffffff;
+    cursor: pointer;
+}
+.phone-mockup__prop {
+    height: 240px;
+    width: 128px;
+    align-self: center;
+}
+.enter-email {
+    padding: 12px 12px 12px 25px;
+    border: none;
+    border-radius: 19px;
+    color: #99a7b4;
+    font-weight: bold;
+}
+
 @media screen and (min-width: 480px){
     .section__article-finance{
     display: flex;
@@ -161,18 +209,4 @@ img{
         width: 100%;
         gap: 1.5rem;
     }
-}
-
-header {
-    display: flex;
-    justify-content: center;
-    background-image: url(../images/shared/desktop/bg-pattern-circle.svg);
-    background-repeat: no-repeat;
-    background-position: 50% 124%;
-    
-}
-
-.phone-mockup__prop {
-    height: 240px;
-    width: 128px;
 }
