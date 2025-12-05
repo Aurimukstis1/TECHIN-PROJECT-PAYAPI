@@ -1,5 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+.mobile__nav{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+margin-left: 24.76px;
+margin-right: 24px;
+margin-top: 40.76px;
+}
+
+.logo_icon{
+width: 133.9px;
+height: 36.77px;
+}
+
+.menu_icon{
+    width: 28px;
+    height: 17px;
+}
+
 body {
     width: 80%;
     margin: auto;
