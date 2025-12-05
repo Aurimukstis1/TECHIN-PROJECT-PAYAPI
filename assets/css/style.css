@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-    width: 80%;
-    margin: auto;
-    background-color: #fbfcfe;
+    margin: 0;
+    background-color: #EDF3F8;
 }
 
 /* Mobile menu — layout and styles tailored for 375 x 667 viewport */
@@ -228,10 +227,13 @@ body {
 	color: var(--color-white);
 }
 
+/*  */
+
 .pricing-page-header {
     margin-bottom: 2rem;
     margin-top: 4rem;
     text-align: left;
+    margin-left: 165px;
 
     font-family: "DM Serif Display", serif;
     font-weight: 400;
@@ -242,14 +244,16 @@ body {
 }
 
 .pricing-page-box {
-    width: 100%;
+    margin-left: 165px;
+    margin-right: 165px;
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 30px;
 
     margin-bottom: 4rem;
 
     & .pricing-item {
+        /* max-width: 350px; */
 
         & .pricing-item__intro {
             & h3 {
@@ -291,8 +295,8 @@ body {
         }
 
         & .pricing-item__list {
-            border-top: 1px solid #6c8294;
-            border-bottom: 1px solid #6c8294;
+            border-top: 1px solid rgba(54, 83, 107, 0.25);
+            border-bottom: 1px solid rgba(54, 83, 107, 0.25);
 
             & ul {
                 display: flex;
@@ -346,13 +350,29 @@ body {
     }
 }
 
-@media screen and (min-width: 480px){
-    body {
-        width: 95%;
-        margin: auto;
-        background-color: #fbfcfe;
-    }
+.section__article-finance{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.home__p-finances{
+    text-align: center;
+    color: #6c8294;
+    font-family:  "Public Sans", sans-serif;
+}
+.home__h3-finances{
+    text-align: center;
+    color: #36536b;
+    font-family:  "Public Sans", sans-serif;
+}
+.home__img-finances{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+@media screen and (min-width: 480px){
     .section__article-finance {
         display: flex;
         flex-direction: row;
@@ -364,6 +384,7 @@ body {
 
 @media screen and (max-width: 480px){
     .pricing-page-box {
+        
         gap: 1rem;
         flex-direction: column;
 
@@ -388,49 +409,33 @@ body {
                     text-align: center;
                 }
             }
+
+            & .pricing-item__list {
+                & ul {
+                    padding-left: 0;
+                    margin-left: 100px;
+
+                    & li {
+                        font-family: "Public Sans", sans-serif;
+                        font-optical-sizing: auto;
+                        font-weight: 300;
+                        font-style: normal;
+                        color: #6c8294;
+                        list-style: none;
+                    }
+
+                    & #pricing-item__list-checkmark {
+                        font-weight: 400;
+                        color: #36536b;
+                        list-style-image: url("../images/shared/desktop/icon-check.svg");
+                    }
+                }
+            }
         }
     }
 }
 
-.section__article-finance{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-}
-.home__p-finances{
-    text-align: center;
-    color: #6c8294;
-    font-family:  "Public Sans", sans-serif;
-}
-.home__h3-finances{
-    text-align: center;
-    color: #36536b;
-    font-family:  "Public Sans", sans-serif;
-}
-.home__img-finances{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-@media screen and (min-width: 480px){
-    .section__article-finance{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 100%;
-        gap: 0.5rem;
-    }
-}
-
 @media screen and (min-width: 768px){
-    body {
-        width: 90%;
-        margin: auto;
-        background-color: #fbfcfe;
-    }
-
     .section__article-finance {
         display: flex;
         flex-direction: row;
@@ -441,13 +446,15 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-
     .pricing-page-header {
         text-align: center;
+        margin-left: 0;
     }
 
     .pricing-page-box {
-        gap: 1rem;
+        gap: 10px;
+        margin-left: 40px;
+        margin-right: 40px;
 
         & .pricing-item {
             & .pricing-item__button {
