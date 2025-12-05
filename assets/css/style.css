@@ -477,11 +477,11 @@ header {
     cursor: pointer;
 }
 .phone-mockup__prop {
-    height: 400px;
+    height: 420px;
     width: 285px;
     align-self: center;
     position: relative;
-    left: 25px;
+    left: 20px;
 }
 .enter-email {
     padding: 12px 12px 12px 25px;
