@@ -458,33 +458,6 @@ body {
     }
 }
 
-.section__article-finance{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    margin-top: 91px;
-    margin-left: 23px;
-    margin-right: 24px;
-    
-}
-.home__p-finances{
-    text-align: center;
-    color: #6c8294;
-    font-family:  "Public Sans", sans-serif;
-}
-.home__h3-finances{
-    text-align: center;
-    color: #36536b;
-    font-family:  "Public Sans", sans-serif;
-}
-.home__img-finances{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 56px;
-}
-
 header {
     display: flex;
     justify-content: center;
@@ -603,3 +576,5 @@ header {
     color: #6c8294;
     font-family:  "Public Sans", sans-serif;
 }
+
+/* */
