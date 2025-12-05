@@ -1,1 +1,20 @@
+.mobile__nav{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+margin-left: 24.76px;
+margin-right: 24px;
+margin-top: 40.76px;
+}
+
+.logo_icon{
+width: 133.9px;
+height: 36.77px;
+}
+
+.menu_icon{
+    width: 28px;
+    height: 17px;
+}
 
