@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payapi — Mobile Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Public+Sans:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="mobile-menu-body">
+    <div class="mobile-menu-screen">
+        <!-- TEMP: Back area placeholder — remove later when the real background is implemented -->
+        <div class="back-temp" aria-hidden="true"></div>
+        <header class="mobile-menu-header">
+            <div class="brand">
+                <img src="assets/images/shared/mobile/logo.svg" alt="Payapi" class="logo">
+            </div>
+            <button class="menu-toggle close" aria-label="Close menu">
+                <img src="assets/images/shared/mobile/close.svg" alt="" class="x-svg" aria-hidden="true">
+            </button>
+        </header>
+        <!-- Panel and curves -->
+        <img src="assets/images/shared/mobile/menu-panel.svg" alt="" class="menu-panel-img" aria-hidden="true">
+        <img src="assets/images/shared/mobile/curve-top-large.svg" alt="" class="curve-top-img" aria-hidden="true">
+        <img src="assets/images/shared/mobile/menu-top-line.svg" alt="" class="menu-top-line-img" aria-hidden="true">
+
+        <!-- Nav content -->
+        <nav class="mobile-menu-nav" aria-label="Main menu">
+            <ul class="menu-list">
+                <li><a href="pricing.html" class="menu-link">Pricing</a></li>
+                <li><a href="about.html" class="menu-link">About</a></li>
+                <li><a href="contact.html" class="menu-link">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="menu-cta-wrap">
+            <img src="assets/images/shared/mobile/cta-bg.svg" alt="" class="cta-bg" aria-hidden="true">
+            <a href="contact.html" class="cta-button">Schedule a Demo</a>
+        </div>
+    </div>
+
+    <script src="assets/javascript/struct.js"></script>
+</body>
+</html>
