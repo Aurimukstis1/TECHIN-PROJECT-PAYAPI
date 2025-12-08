@@ -103,13 +103,43 @@ body {
     Cantarell, "DM Serif Display", sans-serif;
 }
 
+/* Prevent page scroll when menu is open */
+.no-scroll {
+  overflow: hidden;
+}
+
+/* Hide the page's hamburger when menu is open */
+.menu-open .hamburger-svg { visibility: hidden; }
+
+/* Overlay root to render menu above current page */
+#mobile-menu-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: none;
+  /* transparent so the page stays visible; feel free to dim slightly */
+  background: transparent;
+}
+#mobile-menu-overlay.is-open { display: block; }
+
 .mobile-menu-screen {
   position: relative;
-  width: 375px;
-  height: 667px;
-  margin: 0 auto;
-  background: var(--color-white);
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background: transparent; /* let underlying page show */
   overflow: hidden;
+}
+
+/* Right-side panel area (responsive width) */
+.menu-panel-area {
+  --panel-width: clamp(300px, 80vw, 420px);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: var(--panel-width);
+  height: 100%;
+  background-color: var(--color-dark); /* ensure the dark panel reaches the very top */
 }
 
 /* TEMP: Back area placeholder — remove once the real background is implemented */
@@ -150,10 +180,10 @@ body {
   background: transparent;
   border: none;
   position: absolute;
-  top: 49px; /* precise placement: matches design top 49px */
-  left: 326px; /* precise placement: matches design left 326px */
+  top: 40px;
+  right: 24px;
   cursor: pointer;
-  z-index: 7; /* ensure the close 'X' stays on top */
+  z-index: 7;
 }
 
 .x-svg {
@@ -167,20 +197,19 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  width: 300px; /* exact SVG panel width: 300px */
-  height: 667px;
+  width: var(--panel-width);
+  height: 100vh;
   z-index: 1;
 }
 
 /* Top light curve — positioned around upper-left area */
 .curve-top-img {
   position: absolute;
-  /* Figma placement, nudged slightly toward center for closer match */
-  left: -240px;
-  top: -530px;
+  right: -200px; /* tuck the light curve mostly inside the panel */
+  top: -260px;
   width: 780px;
   height: 780px;
-  opacity: 1; /* rely on SVG's internal opacity (0.15) */
+  opacity: 1;
   z-index: 2;
 }
 
@@ -208,8 +237,8 @@ body {
 .menu-top-line-img {
   position: absolute;
   top: 95px;
-  left: 99px;
-  width: 249px;
+  left: 29px; /* inside panel */
+  width: calc(var(--panel-width) - 58px);
   height: 1px;
   z-index: 4;
 }
@@ -217,8 +246,8 @@ body {
 .mobile-menu-nav {
   position: absolute;
   top: 139px;
-  left: 99px;
-  width: 249px;
+  left: 29px; /* inside panel */
+  width: calc(var(--panel-width) - 58px);
   z-index: 5;
 }
 
@@ -233,7 +262,7 @@ body {
   text-align: center;
   font-family: "Public Sans", sans-serif;
   font-weight: 700; /* bold */
-  font-size: 20px;
+  font-size: 22px;
   line-height: 24px;
   letter-spacing: 0;
   color: var(--color-white);
@@ -250,8 +279,8 @@ body {
 .menu-cta-wrap {
   position: absolute;
   top: 307px;
-  left: 99px;
-  width: 252px;
+  left: 29px; /* inside panel */
+  width: calc(var(--panel-width) - 58px);
   height: 48px;
   z-index: 5;
 }
@@ -417,38 +446,4 @@ header {
     font-family:  "Public Sans", sans-serif;
 }
 
-footer {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    background-color: #1b262f;
-    gap: 40px;
-    padding-top: 41px;
-    background-image: url("../images/shared/desktop/bg-pattern-circle.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 188px;
-}
-
-.footer_social-media__nav {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: center;
-    gap: 30px;
-    padding-bottom: 41px;
-}
-
-.logo-footer {
-    align-self: center;
-    margin-right: 10px;
-    width: 135px;
-    height: 38px;
-}
-
-.footer-hyperlinks {
-    text-decoration: none;
-    color: #b7bcc0;
-    font-family: 'Public Sans', sans-serif;
-    font-weight: bold;
-}
+/* */
