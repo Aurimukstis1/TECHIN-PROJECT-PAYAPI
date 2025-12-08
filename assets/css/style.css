@@ -355,6 +355,7 @@ body {
         gap: 0.5rem;
         margin-left: 165px;
         margin-right: 163px;
+        box-sizing: border-box;
     }
 }
 
@@ -427,6 +428,7 @@ body {
         gap: 1.5rem;
         margin-left: 39px;
         margin-right: 39px;
+        box-sizing: border-box;
     }
 }
 
@@ -467,17 +469,4 @@ body {
     height: 240px;
     width: 128px;
 }
-.about__h1-style{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #6c8294;
-    font-family:  "Public Sans", sans-serif;
-    width: 100%;
-}
-.about__h2-style{
-    display: flex;
-    align-items: center;
-    color: #6c8294;
-    font-family:  "Public Sans", sans-serif;
-}
+
