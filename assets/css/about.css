@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    margin: 0;
+    background-color: #EDF3F8;
+}
+
+.about__h1-style{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #36536b;
+    font-family:  "Public Sans", sans-serif;
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+    box-sizing: border-box;
+}
+.about__h2-style{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #36536b;
+    font-family:  "Public Sans", sans-serif;
+    padding-left: 24px;
+    padding-right: 24px;
+    box-sizing: border-box;
+}
+.about__p-style{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #6c8294;
+    font-family:  "Public Sans", sans-serif;
+    padding-left: 24px;
+    padding-right: 24px;
+    box-sizing: border-box;
+}
+.teams__members-style{
+    border-bottom: 1px solid rgba(108, 130, 148, 0.25);
+    border-top: 1px solid rgba(108, 130, 148, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: 24px;
+    margin-right: 24px;
+    padding-bottom: 17px;
+}
+.text__style1{
+    font-family:  "Public Sans", sans-serif;
+    color: #6c8294;
+    line-height: 72px;
+}
+.text__style2{
+    color: #BA4270;
+    font-family: "DM Serif Display", serif;
+    font-size: 56px;
+    text-align: center;
+    letter-spacing: -0.28px;
+    opacity: 1;
+    margin: 0px;
+    line-height: 36px;
+}
+.img__style{
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+.about__block-style{
+    padding-top: 53px;
+}
