@@ -336,7 +336,7 @@ header {
   justify-content: center;
   background-image: url(../images/shared/desktop/bg-pattern-circle.svg);
   background-repeat: no-repeat;
-  background-position: 50% -670px;
+  background-position: 50% -530px;
   flex-direction: column;
   justify-content: space-between;
 }
