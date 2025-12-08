@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    background-color: #EDF3F8;
+}
+
+/* */
+
+.contact-page-header {
+    margin-left: 165px;
+    margin-top: 80px;
+    width: 730px;
+
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 56px;
+    line-height: 56px;
+    color: #36536B;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-page-header {
+        margin-top: 80px;
+        font-size: 48px;
+        line-height: 56px;
+        margin-left: 97px;
+        margin-right: 98px;
+        max-width: 573px;
+        max-height: 178px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-page-header {
+        margin-top: 60px;
+        font-size: 32px;
+        line-height: 36px;
+        margin-left: 24px;
+        margin-right: 24px;
+        max-width: 327px;
+        max-height: 116px;
+        text-align: center;
+    }
+}
