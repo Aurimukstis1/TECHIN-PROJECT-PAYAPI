@@ -4,17 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Payapi</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <script src="./assets/javascript/struct.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
+      <div class="mobile__nav">
+        <img
+          class="logo_icon"
+          src="./assets/images/shared/desktop/logo.svg"
+          alt="Logo"
+        />
+        <img
+          src="assets/images/shared/mobile/menu.svg"
+          alt=""
+          class="hamburger-svg"
+          aria-hidden="true"
+        />
+      </div>
 
-        <img src="./assets/images/home/desktop/illustration-phone-mockup.svg" alt="a phone mockup image" class="phone-mockup__prop">
+      <img
+        src="./assets/images/home/desktop/illustration-phone-mockup.svg"
+        alt="a phone mockup image"
+        class="phone-mockup__prop"
+      />
+      <div class="start-building__prop">
+        <h1 class="header-start">
+          Start building with our APIs for absolutely free.
+        </h1>
+        <input
+          type="text"
+          id="user-email"
+          name="user_email"
+          placeholder="Enter email address"
+          class="enter-email"
+        />
+        <button class="schedule-demo">Schedule a Demo</button>
+        <p class="contact-us">
+          Have any question?
+          <strong
+            ><a href="" class="contact-us-hyperlink">Contact us</a></strong
+          >
+        </p>
+      </div>
     </header>
 
     <main>
-      Pricing About Contact Schedule a Demo Start building with our APIs for
+      <!-- Pricing About Contact Schedule a Demo Start building with our APIs for
       absolutely free. Enter email address Schedule a Demo Have any questions?
       Contact Us Who we work with Today, millions of people around the world
       have successfully connected their accounts to apps they love using our
@@ -32,7 +68,25 @@
       easier to set up secure bank payments with us through a flow designed with
       the user experience in mind. Customers could instantly authenticate their
       account. Ready to start? Enter email address Schedule a Demo Pricing About
-      Contact
+      Contact -->
+
+      <article>
+        <img
+          class="home__article_easy-to-impl__img"
+          src="assets/images/home/desktop/illustration-easy-to-implement-modified.svg"
+          alt="Easy to implement illustration"
+        />
+
+        <div class="home__article_easy-to-impl">
+          <p class="home__article_easy-to-impl__heading">Easy to implement</p>
+          <p class="home__article_easy-to-impl__text">
+            Our API comes with just a few lines of code. You’ll be up and
+            running in no time. We built our documentation page to integrate
+            payments functionality with ease.
+          </p>
+        </div>
+      </article>
+
       <section class="section__article-finance">
         <article class="article__finances">
           <img
@@ -76,6 +130,16 @@
       </section>
     </main>
 
-    <footer></footer>
+    <footer>
+      <img src="./assets/images/shared/desktop/white-logo.svg" alt="" class="logo-footer">
+      <a href="" class="footer-hyperlinks">Pricing</a>
+      <a href="" class="footer-hyperlinks">About</a>
+      <a href="" class="footer-hyperlinks">Contact</a>
+      <div class="footer_social-media__nav">
+      <a href="https://www.facebook.com/"><img src="./assets/images/shared/desktop/facebook.svg" alt="facebook logo"></a>
+      <a href="https://bsky.app/"><img src="./assets/images/shared/desktop/twitter.svg" alt="twitter logo"></a>
+      <a href="https://www.linkedin.com/"><img src="./assets/images/shared/desktop/linkedin.svg" alt="linkedin logo"></a>
+      </div>
+    </footer>
   </body>
 </html>
