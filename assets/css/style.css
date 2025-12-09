@@ -458,3 +458,15 @@ footer {
     font-family: 'Public Sans', sans-serif;
     font-weight: bold;
 }
+
+.footer-hyperlinks:hover {
+  color: #ffffff;
+}
+
+.footer-socials {
+  filter: none;
+}
+
+.footer-socials:hover {
+  filter: brightness(0) saturate(100%) invert(72%) sepia(31%) saturate(5000%) hue-rotate(297deg) brightness(93%) contrast(82%);;
+}
