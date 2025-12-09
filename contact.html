@@ -6,6 +6,7 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
     <link rel="stylesheet" href="./assets/css/contact.css">
+    <link rel="stylesheet" href="./assets/css/cta.css">
     <script src="./assets/javascript/menu-overlay.js" defer></script>
 
     <title>Frontend Mentor | PayAPI Website Challenge</title>
@@ -36,6 +37,18 @@
     Pricing
     About
     Contact
+    <!-- CTA: Ready to start? -->
+    <section class="cta-ready" aria-labelledby="cta-ready-title">
+      <div class="cta-ready__container">
+        <h2 id="cta-ready-title" class="cta-ready__title">Ready to start?</h2>
+        <form class="cta-ready__form" action="#" method="post" novalidate>
+          <label class="visually-hidden" for="cta-email">Email address</label>
+          <input id="cta-email" class="cta-ready__input" type="email" name="email" placeholder="Enter email address" aria-describedby="cta-help" />
+          <button type="submit" class="cta-ready__button">Schedule a Demo</button>
+          <p id="cta-help" class="cta-ready__help" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
   </body>
 
 </html>

@@ -6,6 +6,7 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
     <link rel="stylesheet" href="./assets/css/about.css">
+    <link rel="stylesheet" href="./assets/css/cta.css">
     <script src="./assets/javascript/menu-overlay.js" defer></script>
 
     <title>Frontend Mentor | PayAPI Website Challenge</title>
@@ -19,36 +20,30 @@
     <main>
       <h1 class="about__h1-style">We empower innovators by delivering access to the financial system</h1>
       <section>
-        <article class="about__tablet-desctop-style">
+        <article>
           <h2 class="about__h2-style">Our Vision</h2>
           <p class="about__p-style">Our main goal is to build beautiful consumer experiences along with developer-friendly 
     infrastructure. The result is an intelligent tool that gives everyone the ability to create 
     amazing products that solve big problems. We are deeply focused on democratizing financial 
     services through technology.</p>
         </article>
-        <article class="about__tablet-desctop-style">
+        <article>
           <h2 class="about__h2-style">Our Business</h2>
           <p class="about__p-style">At the core of our platform is the technical infrastructure APIs that connect consumers. 
     Our innovative product provides key insights for businesses and individuals, as well as 
     robust reporting for traditional financial institutions and developers.</p>
         </article>
-        <img class="bigcircle" src="/assets/images/shared/desktop/bg-pattern-circle.svg" alt="">
         <article>
-            <img src="/assets/images/about/mobile/image-team-members.jpg" alt="team-members" class="img__style">
+          <img src="/assets/images/about/mobile/image-team-members.jpg" alt="team-members"
+          class="img__style">
         </article>
         <article class="teams__members-style">
-          <div class="line__style">
-            <p class="text__style1">Team Members</p>
-            <p class="text__style2">300+</p>
-          </div>
-          <div class="line__style">
-            <p class="text__style1">Offices in the US</p>
-            <p class="text__style2">3</p>
-          </div>
-          <div class="line__style">
-            <p class="text__style1">Transactions analyzed</p>
-            <p class="text__style2">10M+</p>
-          </div>
+          <p class="text__style1">Team Members</p>
+          <p class="text__style2">300+</p>
+          <p class="text__style1">Offices in the US</p>
+          <p class="text__style2">3</p>
+          <p class="text__style1">Transactions analyzed</p>
+          <p class="text__style2">10M+</p>
         </article>
         <article class="about__block-style">
           <h2 class="about__h2-style">The Culture</h2>
@@ -56,7 +51,7 @@
     day-to-day work, whether it's company-wide offsites, internal hackathons, or co-worker meetups. 
     We always value cross-team collaboration and diversity of thought, no matter the job title.</p>
         </article>
-        <article class="about__tablet-desctop-style">
+        <article>
           <h2 class="about__h2-style">The People</h2>
           <p class="about__p-style">We're all passionate about building a more efficient and inclusive financial infrastructure 
     together. At PayAPI, we have diverse backgrounds and skills.</p>
@@ -105,6 +100,18 @@
     Pricing
     About
     Contact
+    <!-- CTA: Ready to start? -->
+    <section class="cta-ready" aria-labelledby="cta-ready-title">
+      <div class="cta-ready__container">
+        <h2 id="cta-ready-title" class="cta-ready__title">Ready to start?</h2>
+        <form class="cta-ready__form" action="#" method="post" novalidate>
+          <label class="visually-hidden" for="cta-email">Email address</label>
+          <input id="cta-email" class="cta-ready__input" type="email" name="email" placeholder="Enter email address" aria-describedby="cta-help" />
+          <button type="submit" class="cta-ready__button">Schedule a Demo</button>
+          <p id="cta-help" class="cta-ready__help" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
   </body>
 
 </html>

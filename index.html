@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Payapi</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/sponsors.css" />
+    <link rel="stylesheet" href="./assets/css/cta.css" />
     <link rel="stylesheet" href="./assets/css/mobile-menu.css" />
     <script src="./assets/javascript/struct.js" defer></script>
     <script src="./assets/javascript/menu-overlay.js" defer></script>
@@ -72,6 +74,26 @@
       account. Ready to start? Enter email address Schedule a Demo Pricing About
       Contact -->
 
+      <!-- Sponsors section (Home only) -->
+      <section class="sponsors sponsors--dark" aria-labelledby="sponsors-title">
+        <div class="sponsors__container">
+          <ul class="sponsors__list" aria-label="Sponsor logos">
+            <li class="sponsors__item"><img class="sponsor-img sponsor-img--tesla" src="./assets/images/shared/desktop/tesla.svg" alt="Tesla logo" /></li>
+            <li class="sponsors__item"><img class="sponsor-img sponsor-img--microsoft" src="./assets/images/shared/desktop/microsoft.svg" alt="Microsoft logo" /></li>
+            <li class="sponsors__item"><img class="sponsor-img sponsor-img--hp" src="./assets/images/shared/desktop/hewlett-packard.svg" alt="Hewlett Packard logo" /></li>
+            <li class="sponsors__item"><img class="sponsor-img sponsor-img--oracle" src="./assets/images/shared/desktop/oracle.svg" alt="Oracle logo" /></li>
+            <li class="sponsors__item"><img class="sponsor-img sponsor-img--google" src="./assets/images/shared/desktop/google.svg" alt="Google logo" /></li>
+            <li class="sponsors__item"><img class="sponsor-img sponsor-img--nvidia" src="./assets/images/shared/desktop/nvidia.svg" alt="NVIDIA logo" /></li>
+          </ul>
+
+          <div class="sponsors__panel" role="group" aria-label="Who we work with">
+            <h2 id="sponsors-title" class="sponsors__title">Who we work with</h2>
+            <p class="sponsors__lede">Today, millions of people around the world have successfully connected their accounts to apps they love using our API. We provide developers with the tools they need to create easy and accessible experiences for their users.</p>
+            <a class="sponsors__cta" href="./about.html">About Us</a>
+          </div>
+        </div>
+      </section>
+
       <article>
         <img
           class="home__article_easy-to-impl__img"
@@ -90,19 +112,23 @@
       </article>
 
       <article>
-        <img
-          class="home__article_simple-img"
-          src="assets/images/home/desktop/illustration-simple-ui-modified.svg"
-          alt="Simple UI illustration"
-        />
-        <div class="home__article_simple">
-          <p class="home__article_simple-heading">Simple UI & UX</p>
-          <p class="home__article_simple-text">
-            Our pre-built form is easy to integrate in your app or website’s
-            checkout flow and designed to optimize conversion.
-          </p>
+        <div class="positions">
+          <img
+            class="home__article_simple-img"
+            src="assets/images/home/desktop/illustration-simple-ui-modified.svg"
+            alt="Simple UI illustration"
+          />
+          <div class="home__article_simple">
+            <p class="home__article_simple-heading">Simple UI & UX</p>
+            <p class="home__article_simple-text">
+              Our pre-built form is easy to integrate in your app or website’s
+              checkout flow and designed to optimize conversion.
+            </p>
+          </div>
         </div>
       </article>
+
+      
 
       <section class="section__article-finance">
         <article class="article__finances">
@@ -147,31 +173,28 @@
       </section>
     </main>
 
+    <!-- CTA: Ready to start? -->
+    <section class="cta-ready" aria-labelledby="cta-ready-title">
+      <div class="cta-ready__container">
+        <h2 id="cta-ready-title" class="cta-ready__title">Ready to start?</h2>
+        <form class="cta-ready__form" action="#" method="post" novalidate>
+          <label class="visually-hidden" for="cta-email">Email address</label>
+          <input id="cta-email" class="cta-ready__input" type="email" name="email" placeholder="Enter email address" aria-describedby="cta-help" />
+          <button type="submit" class="cta-ready__button">Schedule a Demo</button>
+          <p id="cta-help" class="cta-ready__help" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
     <footer>
-      <img
-        src="./assets/images/shared/desktop/white-logo.svg"
-        alt=""
-        class="logo-footer"
-      />
-      <a href="./pricing.html" class="footer-hyperlinks">Pricing</a>
-      <a href="./about.html" class="footer-hyperlinks">About</a>
-      <a href="./contact.html" class="footer-hyperlinks">Contact</a>
+      <img src="./assets/images/shared/desktop/white-logo.svg" alt="" class="logo-footer">
+      <a href="" class="footer-hyperlinks">Pricing</a>
+      <a href="" class="footer-hyperlinks">About</a>
+      <a href="" class="footer-hyperlinks">Contact</a>
       <div class="footer_social-media__nav">
-        <a href="https://www.facebook.com/"
-          ><img
-            src="./assets/images/shared/desktop/facebook.svg"
-            alt="facebook logo"
-        /></a>
-        <a href="https://bsky.app/"
-          ><img
-            src="./assets/images/shared/desktop/twitter.svg"
-            alt="twitter logo"
-        /></a>
-        <a href="https://www.linkedin.com/"
-          ><img
-            src="./assets/images/shared/desktop/linkedin.svg"
-            alt="linkedin logo"
-        /></a>
+      <a href="https://www.facebook.com/"><img src="./assets/images/shared/desktop/facebook.svg" alt="facebook logo"></a>
+      <a href="https://bsky.app/"><img src="./assets/images/shared/desktop/twitter.svg" alt="twitter logo"></a>
+      <a href="https://www.linkedin.com/"><img src="./assets/images/shared/desktop/linkedin.svg" alt="linkedin logo"></a>
       </div>
     </footer>
   </body>

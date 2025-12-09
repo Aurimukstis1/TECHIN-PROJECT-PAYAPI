@@ -1,4 +1,4 @@
-/* Mobile menu overlay: independent stylesheet for easier merges */
+/* Mobile menu overlay */
 :root {
   --color-accent: #ba4270;
   --color-white: #fbfcfe;
@@ -14,7 +14,7 @@
 .mobile-overlay {
   position: fixed;
   inset: 0;
-  z-index: 99999; /* ensure overlay sits above any page header */
+  z-index: 99999;
   pointer-events: none;
   background: transparent;
 }
@@ -24,8 +24,8 @@
   right: 0;
   width: var(--panel-width);
   height: 100vh;
-  background: #1b262f; /* solid dark, square edge */
-  z-index: 1000000; /* above any fixed site header */
+  background: #1b262f;
+  z-index: 1000000;
   pointer-events: auto;
   box-shadow: -8px 0 24px rgba(0,0,0,0.2);
   transform: translateX(100%);
@@ -38,14 +38,14 @@
   height: 88px;
   display: flex;
   align-items: center;
-  justify-content: flex-end; /* no logo, only close */
+  justify-content: flex-end;
   padding: 0 24px;
 }
 .menu-toggle.close {
   background: none;
   border: none;
   cursor: pointer;
-  position: absolute; /* inside page headers only */
+  position: absolute;
   top: 24px;
   right: 16px;
   z-index: 7;
@@ -64,7 +64,7 @@
 .mobile-overlay-close {
   position: absolute;
   top: 16px;
-  right: 56px; /* move further left on the panel */
+  right: 56px;
   cursor: pointer;
   z-index: 1000001;
 }
@@ -75,13 +75,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: none !important;     /* remove visible square */
-  border-radius: 0 !important; /* no rounded box */
-  background: transparent !important; /* no box fill */
-  /* Placement */
+  border: none !important;
+  border-radius: 0 !important;
+  background: transparent !important;
   top: 16px;
   right: 56px;
-  z-index: 1000001; /* sits above panel content */
+  z-index: 1000001;
 }
 
 .mobile-overlay-close img {
@@ -90,12 +89,7 @@
   display: block;
 }
 
-/* Ensure panel can anchor absolute children */
-.mobile-overlay-panel {
-  position: fixed;
-}
-
-/* Removed global fallback close for consistent appearance across pages */
+.mobile-overlay-panel { position: fixed; }
 .mobile-overlay-panel .mobile-overlay-close img { display: block; width: 18px; height: 18px; }
 
 .mobile-menu-nav {
