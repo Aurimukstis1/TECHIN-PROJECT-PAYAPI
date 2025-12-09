@@ -90,12 +90,7 @@
   display: block;
 }
 
-/* Ensure panel can anchor absolute children */
-.mobile-overlay-panel {
-  position: fixed;
-}
-
-/* Removed global fallback close for consistent appearance across pages */
+.mobile-overlay-panel { position: fixed; }
 .mobile-overlay-panel .mobile-overlay-close img { display: block; width: 18px; height: 18px; }
 
 .mobile-menu-nav {
