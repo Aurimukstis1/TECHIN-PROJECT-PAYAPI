@@ -61,6 +61,47 @@
   margin: 12px 0px 0px 0px;
 }
 
+.positions {
+  /* position: relative;
+  width: 100%; */
+}
+
+.home__article_simple-img {
+  margin-top: 36px;
+}
+
+.home__article_simple {
+  position: relative;
+  top: -58.67px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 24px;
+  margin-right: 23px;
+}
+.home__article_simple-heading {
+  font-family: "DM Serif Display", serif;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: -0.28px;
+  color: #36536b;
+  opacity: 1;
+  margin: 0px;
+  line-height: 36px;
+}
+.home__article_simple-text {
+  text-align: center;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  letter-spacing: 0px;
+  color: #6c8294;
+  opacity: 1;
+  line-height: 28px;
+  margin: 12px 0px 0px 0px;
+}
+
 body {
   margin: 0;
   background-color: #edf3f8;
@@ -372,15 +413,15 @@ header {
   cursor: pointer;
 }
 .phone-mockup__prop {
-    height: 400px;
-    width: 285px;
-    align-self: center;
-    position: relative;
-    left: 35px;
-    font-family: "Public Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: normal;
-    font-style: normal;
+  height: 400px;
+  width: 285px;
+  align-self: center;
+  position: relative;
+  left: 35px;
+  font-family: "Public Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
 }
 .enter-email {
   padding: 12px 12px 12px 25px;
@@ -402,19 +443,19 @@ header {
   }
 }
 
-.about__h1-style{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #6c8294;
-    font-family:  "Public Sans", sans-serif;
-    width: 100%;
+.about__h1-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #6c8294;
+  font-family: "Public Sans", sans-serif;
+  width: 100%;
 }
-.about__h2-style{
-    display: flex;
-    align-items: center;
-    color: #6c8294;
-    font-family:  "Public Sans", sans-serif;
+.about__h2-style {
+  display: flex;
+  align-items: center;
+  color: #6c8294;
+  font-family: "Public Sans", sans-serif;
 }
 
 /* */
