@@ -22,8 +22,8 @@ body {
 }
 
 .pricing-page-box {
-    margin-left: 165px;
-    margin-right: 165px;
+    margin-left: 24px;
+    margin-right: 24px;
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -31,7 +31,7 @@ body {
     margin-bottom: 4rem;
 
     & .pricing-item {
-        /* max-width: 350px; */
+        max-width: 350px;
 
         & .pricing-item__intro {
             & h3 {
@@ -130,14 +130,20 @@ body {
 
 /*  */
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 767px){
     
     .pricing-page-box {
         
         gap: 1rem;
         flex-direction: column;
+        align-items: center;
+
+        margin-left: 24px;
+        margin-right: 24px;
 
         & .pricing-item {
+            max-width: 330px;
+
             & .pricing-item__button {
                 width: 100%;
                 justify-content: center;
@@ -198,6 +204,8 @@ body {
         margin-right: 40px;
 
         & .pricing-item {
+            max-width: 225px;
+
             & .pricing-item__button {
                 width: 100%;
                 justify-content: center;
