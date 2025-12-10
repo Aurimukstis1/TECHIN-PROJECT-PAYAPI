@@ -31,6 +31,51 @@ body {
         max-height: 178px;
         text-align: center;
     }
+    h2 {
+    text-align: center;
+    margin-bottom: 32px;
+    color: #647b8e;
+    margin-block: 40px;
+    margin-inline: 17%;
+    }
+    .contact-icons__grid {
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    gap: 65% 18%;
+    grid-template-rows: 30% 30%;
+    grid-template-columns: 15% 10% 15%;
+    margin-bottom: 10%;
+    }
+    .microsoft-size {
+    height: 31px;
+    width: 146px;
+    }
+
+    .tesla-size {
+        height: 17px;
+        width: 130px;
+    }
+
+    .hp-size {
+        height: 27px;
+        width: 141px;
+    }
+
+    .oracle-size {
+        height: 17px;
+        width: 132px;
+    }
+
+    .google-size {
+        height: 33px;
+        width: 97px;
+    }
+
+    .nvidia-size {
+        height: 26px;
+        width: 138px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -43,6 +88,49 @@ body {
         max-width: 327px;
         max-height: 116px;
         text-align: center;
+    }
+    h2 {
+    text-align: center;
+    margin-bottom: 32px;
+    color: #647b8e;
+    margin-block: 24px;
+    margin-inline: 11.5%;
+    }
+    .contact-icons__grid {
+    display: grid;
+    place-items: center;
+    gap: 45px 10px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    }
+    .microsoft-size {
+    height: 26px;
+    width: 120px;
+    }
+
+    .tesla-size {
+        height: 14px;
+        width: 106px;
+    }
+
+    .hp-size {
+        height: 22px;
+        width: 115px;
+    }
+
+    .oracle-size {
+        height: 14px;
+        width: 108px;
+    }
+
+    .google-size {
+        height: 27px;
+        width: 79px;
+    }
+
+    .nvidia-size {
+        height: 21px;
+        width: 113px;
     }
 }
 
@@ -94,48 +182,52 @@ footer {
   filter: brightness(0) saturate(100%) invert(72%) sepia(31%) saturate(5000%) hue-rotate(297deg) brightness(93%) contrast(82%);;
 }
 
-.contact-icons__grid {
-    display: grid;
-    place-items: center;
-    gap: 45px 10px;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-}
-
-.microsoft-size {
-    height: 26px;
-    width: 120px;
-}
-
-.tesla-size {
-    height: 14px;
-    width: 106px;
-}
-
-.hp-size {
-    height: 22px;
-    width: 115px;
-}
-
-.oracle-size {
-    height: 14px;
-    width: 108px;
-}
-
-.google-size {
-    height: 27px;
-    width: 79px;
-}
-
-.nvidia-size {
-    height: 21px;
-    width: 113px;
-}
-
-h2 {
-    text-align: center;
+@media screen and (min-width: 1440px) {
+    h2 {
+    text-align: left;
     margin-bottom: 32px;
     color: #647b8e;
-    margin-block: 24px;
-    margin-inline: 11.5%;
+    margin-block: 40px;
+    margin-left: 597px;
+    margin-right: 400px;
+    }
+    .contact-icons__grid {
+    display: grid;
+    place-items: center;
+    justify-content: left;
+    margin-left: 600px;
+    gap: 80% 18%;
+    grid-template-rows: 30% 30%;
+    grid-template-columns: 15% 10% 15%;
+    margin-bottom: 10%;
+    }
+    .microsoft-size {
+    height: 31px;
+    width: 146px;
+    }
+
+    .tesla-size {
+        height: 17px;
+        width: 130px;
+    }
+
+    .hp-size {
+        height: 27px;
+        width: 141px;
+    }
+
+    .oracle-size {
+        height: 17px;
+        width: 132px;
+    }
+
+    .google-size {
+        height: 33px;
+        width: 97px;
+    }
+
+    .nvidia-size {
+        height: 26px;
+        width: 138px;
+    }
 }

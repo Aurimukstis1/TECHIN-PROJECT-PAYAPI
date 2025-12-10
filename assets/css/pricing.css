@@ -230,3 +230,50 @@ body {
     }
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: #1b262f;
+    gap: 40px;
+    padding-top: 41px;
+    background-image: url("../images/shared/desktop/bg-pattern-circle.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 188px;
+}
+
+.footer_social-media__nav {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 41px;
+}
+
+.logo-footer {
+    align-self: center;
+    margin-right: 10px;
+    width: 135px;
+    height: 38px;
+}
+
+.footer-hyperlinks {
+    text-decoration: none;
+    color: #b7bcc0;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: bold;
+}
+
+.footer-hyperlinks:hover {
+  color: #ffffff;
+}
+
+.footer-socials {
+  filter: none;
+}
+
+.footer-socials:hover {
+  filter: brightness(0) saturate(100%) invert(72%) sepia(31%) saturate(5000%) hue-rotate(297deg) brightness(93%) contrast(82%);;
+}
