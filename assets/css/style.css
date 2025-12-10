@@ -109,6 +109,9 @@ body {
   background-color: #edf3f8;
 }
 
+/* Prevent horizontal overflow on small screens */
+html, body { overflow-x: hidden; }
+
 /* See assets/css/mobile-menu.css for overlay styles */
 .page-header {
   position: relative;
