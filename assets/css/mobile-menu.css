@@ -95,19 +95,12 @@
 
 .mobile-menu-nav {
   position: absolute;
-  top: 139px;
+  top: 5rem;
   left: 29px;
   width: calc(var(--panel-width) - 58px);
   z-index: 5;
-}
-.menu-top-line-img {
-  position: absolute;
-  top: 95px;
-  left: 29px;
-  width: calc(var(--panel-width) - 58px);
-  height: 1px;
-  background: rgba(255,255,255,0.25);
-  z-index: 4;
+  padding-top: 43px;
+  border-top: 1px solid rgba(255,255,255,0.25);
 }
 .menu-list { list-style: none; margin: 0; padding: 0; }
 .menu-link {

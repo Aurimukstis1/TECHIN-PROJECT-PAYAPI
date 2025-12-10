@@ -52,7 +52,6 @@
     const panel = document.createElement('div');
     panel.className = 'mobile-overlay-panel';
     panel.innerHTML = [
-      '<div class="menu-top-line-img" aria-hidden="true"></div>',
       '<nav class="mobile-menu-nav" aria-label="Main menu">',
       '  <ul class="menu-list">',
       '    <li><a href="pricing.html" class="menu-link">Pricing</a></li>',
