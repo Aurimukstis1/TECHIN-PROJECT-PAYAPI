@@ -9,12 +9,22 @@
   }
 
   function ensureStyles() {
-    if (!qs('link[href$="assets/css/mobile-menu.css"], link[href$="/mobile-menu.css"], link[href*="mobile-menu.css"]')) {
+    return new Promise((resolve) => {
+      const existing = qs('link[href$="assets/css/mobile-menu.css"], link[href$="/mobile-menu.css"], link[href*="mobile-menu.css"]');
+      if (existing) {
+        // If already loaded, resolve; otherwise wait for load
+        if (existing.sheet) return resolve();
+        existing.addEventListener('load', () => resolve(), { once: true });
+        existing.addEventListener('error', () => resolve(), { once: true });
+        return;
+      }
       const link = document.createElement('link');
       link.rel = 'stylesheet';
       link.href = 'assets/css/mobile-menu.css';
+      link.addEventListener('load', () => resolve(), { once: true });
+      link.addEventListener('error', () => resolve(), { once: true });
       document.head.appendChild(link);
-    }
+    });
   }
 
   function ensureMenuButton() {
@@ -37,8 +47,7 @@
 
   function openMenuOverlay() {
     if (qs('.mobile-overlay')) return;
-    ensureStyles();
-
+    // We append elements first; animation will be triggered after CSS is ready
     // Hide any visible menu buttons while overlay is open
     const menuButtons = Array.from(document.querySelectorAll('.menu-svg, .hamburger-svg'));
     menuButtons.forEach((btn) => {
@@ -84,8 +93,17 @@
     closer.appendChild(img);
     panel.appendChild(closer);
 
-    // Slide in
-    requestAnimationFrame(() => panel.classList.add('open'));
+    // Ensure stylesheet is loaded before starting the transition
+    ensureStyles().then(() => {
+      // Ensure the browser computes initial styles before toggling classes
+      // 1) Force reflow
+      void panel.offsetWidth;
+      // 2) Next frame apply classes
+      requestAnimationFrame(() => {
+        overlay.classList.add('open');
+        panel.classList.add('open');
+      });
+    });
 
     function cleanup() {
       try { overlay.remove(); } catch(_) {}
@@ -104,6 +122,7 @@
     }
     function closeOverlay() {
       try { panel.classList.remove('open'); } catch(_) {}
+      try { overlay.classList.remove('open'); } catch(_) {}
       const onEnd = (e) => {
         if (!e || e.target === panel) {
           panel.removeEventListener('transitionend', onEnd);
@@ -111,7 +130,7 @@
         }
       };
       panel.addEventListener('transitionend', onEnd);
-      setTimeout(() => { try { panel.removeEventListener('transitionend', onEnd); } catch(_) {} cleanup(); }, 400);
+      setTimeout(() => { try { panel.removeEventListener('transitionend', onEnd); } catch(_) {} cleanup(); }, 500);
     }
 
     closer.addEventListener('click', closeOverlay);
