@@ -66,6 +66,7 @@ body {
 .img__style{
     padding-top: 48px;
     padding-bottom: 48px;
+    width: 100%;
 }
 .bigcircle{
     display: none;
@@ -81,6 +82,7 @@ body {
         display: flex;
         flex-direction: row;
         align-content: flex-start;
+        margin-top: 48px;
     }
     .about__h2-style{
         width: 30%;
@@ -123,6 +125,7 @@ body {
     }
     .img__style{
         width: 100%;
+        margin-top: 51.5px;
     }
     .img__style{
         content: url(/assets/images/about/tablet/image-team-members.jpg);
@@ -142,6 +145,7 @@ body {
         flex-direction: row;
         margin-left: 260px;
         margin-right: 260px;
+        margin-top: 53px;
     }
     .about__h2-style{
         width: 30%;
