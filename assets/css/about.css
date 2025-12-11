@@ -15,6 +15,7 @@ body {
     padding-left: 24px;
     padding-right: 24px;
     box-sizing: border-box;
+    line-height: 36px;
 }
 .about__h2-style{
     display: flex;
@@ -25,6 +26,7 @@ body {
     padding-left: 24px;
     padding-right: 24px;
     box-sizing: border-box;
+    line-height: 32px;
 }
 .about__p-style{
     display: flex;
@@ -35,6 +37,7 @@ body {
     padding-left: 24px;
     padding-right: 24px;
     box-sizing: border-box;
+    line-height: 28px;
 }
 .teams__members-style{
     border-bottom: 1px solid rgba(108, 130, 148, 0.25);
@@ -73,7 +76,14 @@ body {
 .bigcircle{
     display: none;
 }
-@media screen and (min-width: 375px){
+@media screen and (min-width: 768px){
+    .about__h1-style{
+        align-items: center;
+        width: 573px;
+        margin: auto;
+        font-size: 48px;
+        line-height: 56px;
+    }
     .about__tablet-desctop-style{
         display: flex;
         flex-direction: row;
@@ -89,12 +99,14 @@ body {
         width: 30%;
         padding: 0;
         padding-left: 39px;
+        line-height: 40px;
     }
     .about__p-style{
         text-align: justify;
         width: 70%;
         padding: 0;
         padding-right: 40px;
+        line-height: 28px;
     }
     .teams__members-style{
         border: none;
@@ -154,7 +166,25 @@ body {
     .img__style{
         content: url(/assets/images/about/desktop/image-team-members.jpg);
     }
-
+    .teams__members-style{
+        border: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        gap: 30px;
+        margin-left: 165px;
+        margin-right: 165px;
+    }
+    .bigcircle{
+        display: block;
+        position: absolute;
+        left: -35rem;
+        /* top: 17vh; */
+        top: 32rem;
+        z-index: -1;
+    }
     
 }
 @media screen and (min-width: 1440px) {
