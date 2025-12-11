@@ -65,6 +65,7 @@ body {
 .img__style{
     padding-top: 48px;
     padding-bottom: 48px;
+    width: 100%;
 }
 .about__block-style{
     padding-top: 53px;
@@ -77,6 +78,7 @@ body {
         display: flex;
         flex-direction: row;
         align-content: flex-start;
+        margin-top: 48px;
     }
     .about__block-style{
         display: flex;
@@ -124,6 +126,7 @@ body {
     }
     .img__style{
         width: 100%;
+        margin-top: 51.5px;
     }
     .about__h1-style{
         padding-left: 97px;
