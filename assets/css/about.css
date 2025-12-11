@@ -10,19 +10,19 @@ body {
     align-items: center;
     text-align: center;
     color: #36536b;
-    font-family: "DM Serif Display", serif;
-    font-size: 32px;
-    width: 327px;
-    margin: auto;
+    font-family:  "Public Sans", sans-serif;
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
     box-sizing: border-box;
     line-height: 36px;
 }
 .about__h2-style{
     display: flex;
+    text-align: center;
     justify-content: center;
     color: #36536b;
-    font-family: "DM Serif Display", serif;
-    font-size: 24px;
+    font-family:  "Public Sans", sans-serif;
     padding-left: 24px;
     padding-right: 24px;
     box-sizing: border-box;
@@ -34,7 +34,6 @@ body {
     justify-content: center;
     color: #6c8294;
     font-family:  "Public Sans", sans-serif;
-    font-size: 15px;
     padding-left: 24px;
     padding-right: 24px;
     box-sizing: border-box;
@@ -71,6 +70,9 @@ body {
     padding-bottom: 48px;
     width: 100%;
 }
+.about__block-style{
+    padding-top: 53px;
+}
 .bigcircle{
     display: none;
 }
@@ -87,6 +89,11 @@ body {
         flex-direction: row;
         align-content: flex-start;
         margin-top: 48px;
+    }
+    .about__block-style{
+        display: flex;
+        flex-direction: row;
+        align-content: flex-start;
     }
     .about__h2-style{
         width: 30%;
@@ -133,42 +140,28 @@ body {
         width: 100%;
         margin-top: 51.5px;
     }
-    .img__style{
-        content: url(/assets/images/about/tablet/image-team-members.jpg);
+    .about__h1-style{
+        padding-left: 97px;
+        padding-right: 98px;
     }
 }
-@media screen and (min-width: 1440px){
-    .about__h1-style{
-        width: 730px;
-        margin: auto;
-        font-size: 56px;
-        text-align: left;
-        line-height: 56px;
-        margin-left: 260px;
-    }
+@media screen and (min-width: 768px){
     .about__tablet-desctop-style{
         display: flex;
         flex-direction: row;
-        margin-left: 260px;
-        margin-right: 260px;
-        margin-top: 53px;
+        align-content: flex-start;
+    }
+    .about__block-style{
+        display: flex;
+        flex-direction: row;
+        align-content: flex-start;
     }
     .about__h2-style{
         width: 30%;
-        gap: 30px;
-        display: flex;
-        justify-content: start;
-        text-align: left;
-        color: #36536b;
-        font-size: 32px;
-        line-height: 40px;
-        padding-left: 0;
-        padding-right: 0;
     }
     .about__p-style{
         text-align: justify;
         width: 70%;
-        line-height: 28px;
     }
     .img__style{
         content: url(/assets/images/about/desktop/image-team-members.jpg);
@@ -194,7 +187,7 @@ body {
     }
     
 }
-/* @media screen and (min-width: 1440px) {
+@media screen and (min-width: 1440px) {
     .teams__members-style{
         border: none;
         margin: 0;
@@ -218,10 +211,11 @@ body {
         display: block;
         position: absolute;
         left: -35rem;
+        /* top: 17vh; */
         top: 12.5rem;
         z-index: -1;
     }
-} */
+}
 
 footer {
     display: flex;
