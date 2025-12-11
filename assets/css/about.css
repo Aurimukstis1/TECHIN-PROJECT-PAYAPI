@@ -208,7 +208,6 @@ body {
         display: block;
         position: absolute;
         left: -35rem;
-        /* top: 17vh; */
         top: 12.5rem;
         z-index: -1;
     }
