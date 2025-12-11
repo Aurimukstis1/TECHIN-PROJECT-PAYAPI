@@ -15,6 +15,7 @@ body {
     width: 327px;
     margin: auto;
     box-sizing: border-box;
+    line-height: 36px;
 }
 .about__h2-style{
     display: flex;
@@ -25,6 +26,7 @@ body {
     padding-left: 24px;
     padding-right: 24px;
     box-sizing: border-box;
+    line-height: 32px;
 }
 .about__p-style{
     display: flex;
@@ -36,6 +38,7 @@ body {
     padding-left: 24px;
     padding-right: 24px;
     box-sizing: border-box;
+    line-height: 28px;
 }
 .teams__members-style{
     border-bottom: 1px solid rgba(108, 130, 148, 0.25);
@@ -77,6 +80,7 @@ body {
         width: 573px;
         margin: auto;
         font-size: 48px;
+        line-height: 56px;
     }
     .about__tablet-desctop-style{
         display: flex;
@@ -88,12 +92,14 @@ body {
         width: 30%;
         padding: 0;
         padding-left: 39px;
+        line-height: 40px;
     }
     .about__p-style{
         text-align: justify;
         width: 70%;
         padding: 0;
         padding-right: 40px;
+        line-height: 28px;
     }
     .teams__members-style{
         border: none;
@@ -183,7 +189,7 @@ body {
         position: absolute;
         left: -35rem;
         /* top: 17vh; */
-        top: 22rem;
+        top: 32rem;
         z-index: -1;
     }
     
