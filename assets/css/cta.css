@@ -76,10 +76,29 @@
     text-align: center;
   }
 
+  /* Tablet: input extends under button */
   .cta-ready__form {
-    grid-template-columns: 1fr 180px;
-    gap: 20px;
-    justify-items: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cta-ready__input {
+    flex: 1 1 auto;
+    height: 56px;
+    border-radius: 999px;
+    padding: 0 200px 0 24px; /* reserve space for overlapping button */
+    box-shadow: 10px 10px 25px rgba(54, 83, 107, 0.25), inset 0 0 0 1px rgba(54, 83, 107, 0.08);
+  }
+
+  .cta-ready__button {
+    position: absolute;
+    right: 8px;
+    height: 56px;
+    border-radius: 999px;
+    padding: 0 28px;
+    white-space: nowrap;
   }
 
   .cta-ready__help { margin-top: 20px; }
@@ -96,51 +115,35 @@
 
   .cta-ready__title { text-align: left; font-size: 56px; }
 
+  /* Desktop: input extends under button */
   .cta-ready__form {
-    grid-template-columns: 1fr auto;
-    gap: 0;
-    justify-items: stretch;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
   }
 
   .cta-ready__input {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+    flex: 1 1 auto;
+    height: 64px;
+    border-radius: 999px;
+    padding: 0 240px 0 28px; /* reserve space for larger button */
     box-shadow: 10px 10px 25px rgba(54, 83, 107, 0.25), inset 0 0 0 1px rgba(54, 83, 107, 0.08);
   }
 
   .cta-ready__button {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    padding: 0 28px;
+    position: absolute;
+    right: 12px;
+    height: 64px;
+    border-radius: 999px;
+    padding: 0 32px;
+    white-space: nowrap;
   }
 
   .cta-ready__help { margin-top: 26px; }
 }
 
-/* Connected variant */
-.cta-ready--connected .cta-ready__form { grid-template-columns: 1fr auto; }
-.cta-ready--connected .cta-ready__input {
-  border-radius: 999px;
-  padding-right: 160px;
-  position: relative;
-}
-.cta-ready--connected .cta-ready__button {
-  border-radius: 999px;
-  margin-left: -140px;
-  padding: 0 24px;
-  position: relative;
-  z-index: 1;
-  white-space: nowrap;
-  min-width: 160px;
-}
-@media (min-width: 768px) {
-  .cta-ready--connected .cta-ready__input { padding-right: 180px; }
-  .cta-ready--connected .cta-ready__button { margin-left: -160px; min-width: 180px; }
-}
-@media (min-width: 1024px) {
-  .cta-ready--connected .cta-ready__input { padding-right: 210px; }
-  .cta-ready--connected .cta-ready__button { margin-left: -190px; min-width: 200px; }
-}
+/* Remove old connected variant; unified approach above */
 
 /* Accessibility */
 .visually-hidden {
