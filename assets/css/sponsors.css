@@ -2,9 +2,9 @@
 
 .sponsors {
   background: #FBFCFE;
-  padding: 48px 24px;
+  /* padding: 48px 24px; */
 }
-.sponsors__container { max-width: 1110px; margin: 0 auto; }
+.sponsors__container { max-width: 1110px; margin: 0 auto;}
 .sponsors__list {
   list-style: none;
   margin: 0;
@@ -19,7 +19,7 @@
 }
 .sponsors--dark {
   background: #1B2D3A;
-  padding: 48px 24px;
+  /* padding: 48px 24px; */
   position: relative;
   width: 100%;
   margin: 0;
@@ -27,7 +27,6 @@
   right: auto;
   overflow: hidden;
 }
-.sponsors--dark .sponsors__container { padding: 0 16px; }
 .sponsors--dark .sponsors__panel,
 .sponsors--dark .sponsors__list { position: relative; z-index: 1; }
 
