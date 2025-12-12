@@ -20,120 +20,6 @@ body {
     color: #36536B;
 }
 
-@media screen and (max-width: 768px) {
-    .contact-page-header {
-        margin-top: 80px;
-        font-size: 48px;
-        line-height: 56px;
-        margin-left: 97px;
-        margin-right: 98px;
-        max-width: 573px;
-        max-height: 178px;
-        text-align: center;
-    }
-    h2 {
-    text-align: center;
-    margin-bottom: 32px;
-    color: #647b8e;
-    margin-block: 40px;
-    margin-inline: 17%;
-    }
-    .contact-icons__grid {
-    display: grid;
-    place-items: center;
-    justify-content: center;
-    gap: 65% 18%;
-    grid-template-rows: 30% 30%;
-    grid-template-columns: 15% 10% 15%;
-    margin-bottom: 10%;
-    }
-    .microsoft-size {
-    height: 31px;
-    width: 146px;
-    }
-
-    .tesla-size {
-        height: 17px;
-        width: 130px;
-    }
-
-    .hp-size {
-        height: 27px;
-        width: 141px;
-    }
-
-    .oracle-size {
-        height: 17px;
-        width: 132px;
-    }
-
-    .google-size {
-        height: 33px;
-        width: 97px;
-    }
-
-    .nvidia-size {
-        height: 26px;
-        width: 138px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .contact-page-header {
-        margin-top: 60px;
-        font-size: 32px;
-        line-height: 36px;
-        margin-left: 24px;
-        margin-right: 24px;
-        max-width: 327px;
-        max-height: 116px;
-        text-align: center;
-    }
-    h2 {
-    text-align: center;
-    margin-bottom: 32px;
-    color: #647b8e;
-    margin-block: 24px;
-    margin-inline: 11.5%;
-    }
-    .contact-icons__grid {
-    display: grid;
-    place-items: center;
-    gap: 45px 10px;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    }
-    .microsoft-size {
-    height: 26px;
-    width: 120px;
-    }
-
-    .tesla-size {
-        height: 14px;
-        width: 106px;
-    }
-
-    .hp-size {
-        height: 22px;
-        width: 115px;
-    }
-
-    .oracle-size {
-        height: 14px;
-        width: 108px;
-    }
-
-    .google-size {
-        height: 27px;
-        width: 79px;
-    }
-
-    .nvidia-size {
-        height: 21px;
-        width: 113px;
-    }
-}
-
 footer {
     display: flex;
     flex-direction: column;
@@ -182,25 +68,113 @@ footer {
   filter: brightness(0) saturate(100%) invert(72%) sepia(31%) saturate(5000%) hue-rotate(297deg) brightness(93%) contrast(82%);;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 769px) {
+    .contact-icons__grid {
+    display: grid;
+    place-items: center;
+    justify-content: right;
+    margin-right: 18%;
+    gap: 40px 61px;
+    grid-template-rows: 20px 60px 20px;
+    grid-template-columns: 170px 70px 170px;
+    margin-bottom: 10%;
+    margin-top: 20px;
+    }
+    
+    #big {
+    display:inline-block;
+    }
+
+    #small {
+    display: none;
+    }
+
     h2 {
-    text-align: left;
-    margin-bottom: 32px;
     color: #647b8e;
-    margin-block: 40px;
-    margin-left: 597px;
-    margin-right: 400px;
+    grid-row: 1;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    place-self: center start;
+    margin-right: 30px;
+    }
+
+    .microsoft-size {
+    height: 31px;
+    width: 146px;
+    }
+
+    .tesla-size {
+    height: 17px;
+    width: 130px;
+    }
+
+    .grid_align-left {
+        place-self: center start;
+    }
+
+    .hp-size {
+    height: 27px;
+    width: 141px;
+    }
+
+    .grid_align-right {
+    place-self: center end;
+    }
+
+    .oracle-size {
+    height: 17px;
+    width: 132px;
+    }
+
+    .google-size {
+    height: 33px;
+    width: 97px;
+    }
+
+    .nvidia-size {
+    height: 26px;
+    width: 138px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-page-header {
+        margin-top: 80px;
+        font-size: 48px;
+        line-height: 56px;
+        margin-left: 97px;
+        margin-right: 98px;
+        max-width: 573px;
+        max-height: 178px;
+        text-align: center;
     }
     .contact-icons__grid {
     display: grid;
     place-items: center;
-    justify-content: left;
-    margin-left: 600px;
-    gap: 80% 18%;
-    grid-template-rows: 30% 30%;
-    grid-template-columns: 15% 10% 15%;
-    margin-bottom: 10%;
+    justify-content: center;
+    gap: 40px 100px;
+    grid-template-rows: 35px 45px 45px;
+    grid-template-columns: 120px 45px 120px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    margin-left: 0;
     }
+    h2 {
+    text-align: center;
+    color: #647b8e;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    place-self: center;
+    }
+
+    #big {
+    display: none;
+    }
+
+    #small {
+    display: inline-block;
+    }
+
     .microsoft-size {
     height: 31px;
     width: 146px;
@@ -229,5 +203,74 @@ footer {
     .nvidia-size {
         height: 26px;
         width: 138px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-page-header {
+    margin-top: 60px;
+    font-size: 32px;
+    line-height: 36px;
+    margin-left: 24px;
+    margin-right: 24px;
+    max-width: 327px;
+    max-height: 116px;
+    text-align: center;
+    }
+    .contact-icons__grid {
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    gap: 45px 90px;
+    grid-template-rows: 80px 20px 20px 20px;
+    grid-template-columns: 97px 97px;
+    margin-top: 40px;
+    margin-bottom: 0;
+    margin-left: 0;
+    }
+    h2 {
+    text-align: center;
+    color: #647b8e;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    place-self: center;
+    }
+    
+    #big {
+    display: none;
+    }
+
+    #small {
+    display: inline-block;
+    }
+
+    .microsoft-size {
+    height: 26px;
+    width: 120px;
+    }
+
+    .tesla-size {
+        height: 14px;
+        width: 106px;
+    }
+
+    .hp-size {
+        height: 22px;
+        width: 115px;
+    }
+
+    .oracle-size {
+        height: 14px;
+        width: 108px;
+    }
+
+    .google-size {
+        height: 27px;
+        width: 79px;
+    }
+
+    .nvidia-size {
+        height: 21px;
+        width: 113px;
     }
 }
