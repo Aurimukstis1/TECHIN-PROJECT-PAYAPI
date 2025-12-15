@@ -317,7 +317,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 90px;
+  margin-top: 0px;
 }
 .home__p-finances {
   text-align: center;
@@ -416,6 +416,10 @@ header {
     color: #6C8294;
     opacity: 1;
   }
+  footer{
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .about__h1-style {
@@ -433,6 +437,9 @@ header {
   font-family: "Public Sans", sans-serif;
 }
 
+@media screen and (max-width: 768px) {
+  
+}
 footer {
   display: flex;
   flex-direction: column;
