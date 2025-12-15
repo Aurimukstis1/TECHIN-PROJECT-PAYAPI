@@ -20,6 +20,54 @@
   height: 17px;
 }
 
+/* .tablet_navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 39.76px;
+  margin-right: 40px;
+  margin-top: 40px;
+}
+
+.logo_icon_tablet {
+  width: 135px;
+  height: 38px;
+}
+
+.tablet_nav {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.tablet_nav a {
+  font-family: "Public Sans";
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+  letter-spacing: 0px;
+  color: #36536b;
+  opacity: 0.7;
+}
+
+.button_schedule-a-demo {
+  font-family: "Public Sans";
+  font-weight: 700;
+  font-size: 15px;
+  width: 173px;
+  height: 48px;
+  border-radius: 24px;
+  opacity: 1;
+  letter-spacing: -0.12px;
+  color: #fbfcfe;
+  opacity: 1;
+  background: #BA4270 0% 0% no-repeat padding-box;
+  border: none;
+  
+} */
+
 .home__article_easy-to-impl__img {
   width: 328px;
   height: 209px;
@@ -399,7 +447,230 @@ header {
   font-weight: bold;
 }
 
+.mobile__nav,
+.tablet_navigation {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .mobile__nav {
+    display: flex;
+  }
+
+  /* Removed duplicate mobile-overlay styles; see assets/css/mobile-menu.css */
+  .page-header {
+    position: relative;
+    height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+  }
+
+  .menu-toggle.open {
+    position: absolute;
+    top: 32px;
+    right: 24px;
+    width: 28px;
+    height: 17px;
+  }
+
+  .menu-svg {
+    display: block;
+    width: 28px;
+    height: 17px;
+  }
+
+  .mobile-menu-body {
+    margin: 0;
+    background: var(--color-white);
+    font-family: "Public Sans", system-ui, -apple-system, Segoe UI, Roboto,
+      Ubuntu, Cantarell, "DM Serif Display", sans-serif;
+  }
+
+  .mobile-menu-screen {
+    position: relative;
+    width: 375px;
+    height: 667px;
+    margin: 0 auto;
+    background: var(--color-white);
+    overflow: hidden;
+  }
+
+  /* TEMP: Back area placeholder — remove once the real background is implemented */
+  .back-temp {
+    display: none; /* remove decorative background */
+  }
+
+  .mobile-menu-header {
+    position: relative;
+    height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    z-index: 6; /* keep header controls above overlay visuals */
+  }
+
+  .logo {
+    height: 24px;
+  }
+
+  .menu-toggle.close {
+    width: 21px;
+    height: 21px;
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: 32px;
+    right: 24px;
+    cursor: pointer;
+    z-index: 7; /* ensure the close 'X' stays on top */
+  }
+
+  .x-svg {
+    display: block;
+    width: 21px;
+    height: 21px;
+  }
+
+  /* Dark overlay panel (right side) */
+  .menu-panel-img {
+    display: none;
+  }
+  .mobile-menu-screen::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 667px;
+    background: #1b262f; /* solid dark, square edges */
+    z-index: 1;
+  }
+
+  /* Remove decorative curves */
+  .curve-top-img {
+    display: none;
+  }
+
+  /* Mid dark curve — soft shadow arc over the panel */
+  .curve-mid {
+    position: absolute;
+    top: 180px; /* positioned to pass through the link area */
+    left: 30px; /* slight left shift so arc extends past panel */
+    width: 360px; /* wider arc region for shadow feel */
+    height: 190px; /* taller arc region */
+    /* Soften the mid curve: lower opacity and slower falloff */
+    background: radial-gradient(
+      220px 140px at 48% 0%,
+      rgba(24, 46, 63, 0.45) 0%,
+      rgba(24, 46, 63, 0.45) 64%,
+      rgba(24, 46, 63, 0.12) 78%,
+      rgba(24, 46, 63, 0) 100%
+    );
+    z-index: 3;
+  }
+
+  .menu-separator {
+    display: none; /* replaced by a precise SVG line */
+  }
+  .menu-top-line-img {
+    display: none;
+  }
+
+  .mobile-menu-nav {
+    position: absolute;
+    top: 139px;
+    left: 99px;
+    width: 249px;
+    z-index: 5;
+  }
+
+  .menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu-link {
+    display: block;
+    text-align: center;
+    font-family: "Public Sans", sans-serif;
+    font-weight: 700; /* bold */
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0;
+    color: var(--color-white);
+    opacity: 0.7;
+    margin-bottom: 32px; /* spacing between menu rows */
+    text-decoration: none;
+  }
+
+  .menu-link:hover,
+  .menu-link:focus {
+    opacity: 1;
+  }
+
+  .menu-cta-wrap {
+    position: absolute;
+    top: 307px;
+    left: 99px;
+    width: 252px;
+    height: 48px;
+    z-index: 5;
+  }
+
+  .cta-bg {
+    display: none;
+  }
+
+  .cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+    background: #ba4270; /* accent solid pill */
+    color: var(--color-white);
+    font-family: "Public Sans", sans-serif;
+    font-weight: 700; /* bold */
+    font-size: 15px;
+    line-height: 17px;
+    text-decoration: none;
+    position: relative;
+  }
+
+  /* Title style (if needed) — DM Serif Display 32px */
+  .menu-title {
+    position: absolute;
+    top: 88px;
+    left: 24px;
+    right: 24px;
+    font-family: "DM Serif Display", serif;
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: -0.24em; /* roughly -7.692px at 32px */
+    color: var(--color-navy);
+  }
+
+  /* Small text — ExtraLight 15px */
+  .menu-subtext {
+    font-family: "Public Sans", sans-serif;
+    font-weight: 200; /* extra-light */
+    font-size: 15px;
+    line-height: 28px;
+    color: var(--color-white);
+  }
+
+  /*  */
+}
+
 @media screen and (min-width: 768px) {
+  .tablet_navigation {
+    display: flex;
+  }
   .section__article-finance {
     display: flex;
     flex-direction: row;
@@ -409,12 +680,58 @@ header {
     margin-left: 39px;
     margin-right: 39px;
   }
-  .home__p-finances{
+  .home__p-finances {
     height: 92px;
     font: normal normal 200 15px/25px Public Sans;
     letter-spacing: -0.12px;
-    color: #6C8294;
+    color: #6c8294;
     opacity: 1;
+  }
+  .tablet_navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 39.76px;
+    margin-right: 40px;
+    margin-top: 40px;
+  }
+
+  .logo_icon_tablet {
+    width: 135px;
+    height: 38px;
+  }
+
+  .tablet_nav {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+  .tablet_nav a {
+    font-family: "Public Sans";
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+    letter-spacing: 0px;
+    color: #36536b;
+    opacity: 0.7;
+  }
+
+  .button_schedule-a-demo {
+    font-family: "Public Sans";
+    font-weight: 700;
+    font-size: 15px;
+    width: 173px;
+    height: 48px;
+    border-radius: 24px;
+    opacity: 1;
+    letter-spacing: -0.12px;
+    color: #fbfcfe;
+    opacity: 1;
+    background: #ba4270 0% 0% no-repeat padding-box;
+    border: none;
   }
   footer{
     display: flex;
@@ -485,30 +802,31 @@ footer {
 }
 
 .footer-socials:hover {
-  filter: brightness(0) saturate(100%) invert(72%) sepia(31%) saturate(5000%) hue-rotate(297deg) brightness(93%) contrast(82%);;
+  filter: brightness(0) saturate(100%) invert(72%) sepia(31%) saturate(5000%)
+    hue-rotate(297deg) brightness(93%) contrast(82%);
 }
 @media screen and (min-width: 1440px) {
   .section__article-finance {
     flex-direction: row;
-    justify-content:center;
+    justify-content: center;
     align-items: stretch;
     gap: 30px;
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
   }
-  .home__p-finances{
+  .home__p-finances {
     height: 92px;
     font: normal normal 200 15px/25px Public Sans;
     letter-spacing: -0.12px;
-    color: #6C8294;
+    color: #6c8294;
     opacity: 1;
   }
 }
-.home__p-finances{
-    height: 92px;
-    font: normal normal 200 15px/25px Public Sans;
-    letter-spacing: -0.12px;
-    color: #6C8294;
-    opacity: 1;
-  }
+.home__p-finances {
+  height: 92px;
+  font: normal normal 200 15px/25px Public Sans;
+  letter-spacing: -0.12px;
+  color: #6c8294;
+  opacity: 1;
+}
