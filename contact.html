@@ -1,79 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
-    <link rel="stylesheet" href="./assets/css/contact.css">
-    <link rel="stylesheet" href="./assets/css/cta.css">
-    <script src="./assets/javascript/menu-overlay.js" defer></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Frontend Mentor | PayAPI Website Challenge</title>
-  </head>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+  <link rel="stylesheet" href="./assets/css/contact.css">
+  <link rel="stylesheet" href="./assets/css/cta.css">
+  <script src="./assets/javascript/menu-overlay.js" defer></script>
 
-  <body>
-    <header>
-      <nav>
-        Pricing
-        About
-        Contact
-        Schedule a Demo
-      </nav>
-    </header>
-    <main>
+  <title>Frontend Mentor | PayAPI Website Challenge</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      Pricing
+      About
+      Contact
+      Schedule a Demo
+    </nav>
+  </header>
+  <main>
     <h1 class="contact-page-header">Submit a help request and we’ll get in touch shortly.</h1>
-    
-    <div>
-      <section>
-        <article>
-          <table>
-            <form class="form__style">
-              <input type="text" name="Name" placeholder="Name" class="table_size__style">
-              <br>
-              <input type="email" name="Email_adress" placeholder="Email Address" class="table_size__style">
-              <br>
-              <input type="text" name="Company_name" placeholder="Company Name" class="table_size__style">
-              <br>
-              <input type="text" name="Title" placeholder="Title" class="table_size__style">
-              <br>
-              <input type="text" name="Messange" placeholder="Message" class="table_size__style">
-              <br>
-              <input type="checkbox" name="up-to-date" value="accept" class="checkbox__style">Stay up-to-date with company announcements and updates to our API
-              <br>
-              <input type="submit" value="Submit" class="submit__style">
-            </form>
-          </table>
-        </article>
-      </section>
-    </div>
+  <div class="desktop__style">
+    <section class="form-wrapper">
 
-    Name
-    Email Address
-    Company Name
-    Title
-    Message
-    Stay up-to-date with company announcements and updates to our API
-    Submit
+      <form class="contact-form" novalidate>
 
-    <section class="contact-icons__grid">
-    <h2 id="big">Join the thousands of innovators that are already building with us</h2>
-    <h2 id="small">Join the thousands of innovators already building with us</h2>
-    <a href="https://www.tesla.com/" class="grid_align-left"><img src="/assets/images/shared/desktop/tesla.svg" alt="tesla logo" class="tesla-size"></a>
-    <a href="https://www.microsoft.com/"><img src="/assets/images/shared/desktop/microsoft.svg" alt="microsoft logo" class="microsoft-size"></a>
-    <a href="https://www.hp.com/" class="grid_align-right"><img src="/assets/images/shared/desktop/hewlett-packard.svg" alt="hp logo" class="hp-size"></a>
-    <a href="https://www.oracle.com/" class="grid_align-left"><img src="/assets/images/shared/desktop/oracle.svg" alt="oracle logo" class="oracle-size"></a>
-    <a href="https://www.google.com/"><img src="/assets/images/shared/desktop/google.svg" alt="google logo" class="google-size"></a>
-    <a href="https://www.nvidia.com/" class="grid_align-right"><img src="/assets/images/shared/desktop/nvidia.svg" alt="nvidia logo" class="nvidia-size"></a>
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="text" placeholder="Company Name" required>
+        <input type="text" placeholder="Title" required>
+
+        <textarea placeholder="Message"></textarea>
+
+        <label class="checkbox-row">
+          <input type="checkbox">
+          <span class="custom-box"></span>
+          <span class="checkbox-text">
+            Stay up-to-date with company announcements and updates to our API
+          </span>
+        </label>
+
+        <button type="submit">Submit</button>
+
+      </form>
+
     </section>
 
+    <section class="contact-icons__grid">
+      <h2 id="big">Join the thousands of innovators that are already building with us</h2>
+      <h2 id="small">Join the thousands of innovators already building with us</h2>
+      <a href="https://www.tesla.com/" class="grid_align-left"><img src="/assets/images/shared/desktop/tesla.svg"
+          alt="tesla logo" class="tesla-size"></a>
+      <a href="https://www.microsoft.com/"><img src="/assets/images/shared/desktop/microsoft.svg" alt="microsoft logo"
+          class="microsoft-size"></a>
+      <a href="https://www.hp.com/" class="grid_align-right"><img
+          src="/assets/images/shared/desktop/hewlett-packard.svg" alt="hp logo" class="hp-size"></a>
+      <a href="https://www.oracle.com/" class="grid_align-left"><img src="/assets/images/shared/desktop/oracle.svg"
+          alt="oracle logo" class="oracle-size"></a>
+      <a href="https://www.google.com/"><img src="/assets/images/shared/desktop/google.svg" alt="google logo"
+          class="google-size"></a>
+      <a href="https://www.nvidia.com/" class="grid_align-right"><img src="/assets/images/shared/desktop/nvidia.svg"
+          alt="nvidia logo" class="nvidia-size"></a>
+    </section>
+  </div>
     <!-- CTA: Ready to start? -->
     <section class="cta-ready" aria-labelledby="cta-ready-title">
       <div class="cta-ready__container">
         <h2 id="cta-ready-title" class="cta-ready__title">Ready to start?</h2>
         <form class="cta-ready__form" action="#" method="post" novalidate>
           <label class="visually-hidden" for="cta-email">Email address</label>
-          <input id="cta-email" class="cta-ready__input" type="email" name="email" placeholder="Enter email address" aria-describedby="cta-help" />
+          <input id="cta-email" class="cta-ready__input" type="email" name="email" placeholder="Enter email address"
+            aria-describedby="cta-help" />
           <button type="submit" class="cta-ready__button">Schedule a Demo</button>
           <p id="cta-help" class="cta-ready__help" aria-live="polite"></p>
         </form>
@@ -81,42 +82,25 @@
     </section>
 
 
-    </main>
+  </main>
 
-    <footer>
-      <div class="footer-hyperlinks__alignment">
-        <a href="./index.html"
-          ><img
-            src="./assets/images/shared/desktop/white-logo.svg"
-            alt=""
-            class="logo-footer"
-        /></a>
-        <a href="./pricing.html" class="footer-hyperlinks">Pricing</a>
-        <a href="./about.html" class="footer-hyperlinks">About</a>
-        <a href="./contact.html" class="footer-hyperlinks">Contact</a>
-      </div>
-      <div class="footer_social-media__nav">
-        <a href="https://www.facebook.com/"
-          ><img
-            src="./assets/images/shared/desktop/facebook.svg"
-            alt="facebook logo"
-            class="footer-socials"
-        /></a>
-        <a href="https://bsky.app/"
-          ><img
-            src="./assets/images/shared/desktop/twitter.svg"
-            alt="twitter logo"
-            class="footer-twitter"
-        /></a>
-        <a href="https://www.linkedin.com/"
-          ><img
-            src="./assets/images/shared/desktop/linkedin.svg"
-            alt="linkedin logo"
-            class="footer-socials"
-        /></a>
-      </div>
-    </footer>
+  <footer>
+    <div class="footer-hyperlinks__alignment">
+      <a href="./index.html"><img src="./assets/images/shared/desktop/white-logo.svg" alt="" class="logo-footer" /></a>
+      <a href="./pricing.html" class="footer-hyperlinks">Pricing</a>
+      <a href="./about.html" class="footer-hyperlinks">About</a>
+      <a href="./contact.html" class="footer-hyperlinks">Contact</a>
+    </div>
+    <div class="footer_social-media__nav">
+      <a href="https://www.facebook.com/"><img src="./assets/images/shared/desktop/facebook.svg" alt="facebook logo"
+          class="footer-socials" /></a>
+      <a href="https://bsky.app/"><img src="./assets/images/shared/desktop/twitter.svg" alt="twitter logo"
+          class="footer-twitter" /></a>
+      <a href="https://www.linkedin.com/"><img src="./assets/images/shared/desktop/linkedin.svg" alt="linkedin logo"
+          class="footer-socials" /></a>
+    </div>
+  </footer>
 
-  </body>
+</body>
 
 </html>
