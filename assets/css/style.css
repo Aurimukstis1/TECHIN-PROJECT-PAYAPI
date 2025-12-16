@@ -66,6 +66,54 @@ body {
   margin: 12px 0px 0px 0px;
 }
 
+/* .home__article_easy-to-impl_desktop{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 150px 260px 0px 165px;
+  gap: 125px;
+}
+
+.home__article_easy-to-impl__img-desktop {
+  width: 445px;
+  height: 284px;
+  box-shadow: 25px 25px 80px #36536b4d;
+  border-radius: 8px;
+  opacity: 1;
+}
+
+.home__article_easy-to-impl__heading-desktop {
+  font-family: "DM Serif Display", serif;
+  font-size: 48px;
+  text-align: left;
+  letter-spacing: -0.37px;
+  color: #36536b;
+  opacity: 1;
+  margin: 0px;
+  line-height: 56px;
+}
+
+.home__article_easy-to-impl_container-desktop {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.home__article_easy-to-impl__text-desktop {
+  text-align: left;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  letter-spacing: 0px;
+  color: #6c8294;
+  opacity: 1;
+  line-height: 28px;
+  margin: 8px 0px 0px 0px;
+} */
+
+
 .home__article_simple-img {
   margin-top: 36px;
 }
@@ -476,11 +524,77 @@ header {
     filter: brightness(0) saturate(100%) invert(72%) sepia(31%) saturate(5000%)
       hue-rotate(297deg) brightness(93%) contrast(82%);
   }
+
+  .home__article_easy-to-impl__img-tablet{
+    display: none;
+  }
+
+  .home__article_easy-to-impl_tablet{
+    display: none;
+  }
+
+  .home__article_easy-to-impl_desktop{
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .mobile__nav {
     display: none;
+  }
+
+  .home__article_easy-to-impl {
+    display: none;
+  }
+
+  .home__article_easy-to-impl__img {
+    display: none;
+  }
+
+   .home__article_easy-to-impl_desktop{
+    display: none;
+  }
+
+  .home__article_easy-to-impl_tablet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 97px;
+    margin-right: 98px;
+  }
+
+  .home__article_easy-to-impl__img-tablet {
+    display: flex;
+    width: 391.73px;
+    height: 250px;
+    margin: 100px 188.27px 54px 188px;
+    box-shadow: 25px 25px 80px #36536b4d;
+    border-radius: 8px;
+    opacity: 1;
+  }
+
+  .home__article_easy-to-impl__heading-tablet {
+    font-family: "DM Serif Display", serif;
+    font-size: 48px;
+    text-align: center;
+    letter-spacing: -0.37px;
+    color: #36536b;
+    opacity: 1;
+    margin: 0px;
+    line-height: 56px;
+  }
+
+  .home__article_easy-to-impl__text-tablet {
+    text-align: center;
+    font-family: "Public Sans", sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+    letter-spacing: 0px;
+    color: #6c8294;
+    opacity: 1;
+    line-height: 28px;
+    margin: 8px 0px 0px 0px;
   }
 
   .section__article-finance {
