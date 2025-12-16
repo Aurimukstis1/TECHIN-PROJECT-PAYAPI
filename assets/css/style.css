@@ -447,23 +447,9 @@ header {
   font-weight: bold;
 }
 
-@media screen and (min-width: 769px) {
-  .section__article-finance {
-    flex-direction: row;
-    justify-content: center;
-    align-items: stretch;
-    gap: 30px;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .home__p-finances {
-    height: 92px;
-    font: normal normal 200 15px/25px Public Sans;
-    letter-spacing: -0.12px;
-    color: #6c8294;
-    opacity: 1;
-  }
+.mobile__nav,
+.tablet_navigation {
+  display: none;
 }
 
 @media screen and (max-width: 767px) {
@@ -743,140 +729,13 @@ header {
     opacity: 1;
     letter-spacing: -0.12px;
     color: #fbfcfe;
+    opacity: 1;
     background: #ba4270 0% 0% no-repeat padding-box;
     border: none;
   }
   footer{
     display: flex;
     flex-direction: row;
-  }
-  footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #1b262f;
-    gap: 5%;
-    background-image: url("../images/shared/desktop/bg-pattern-circle.svg");
-    background-repeat: no-repeat;
-    background-position: 372.5px 20%;
-    padding-top: 41px;
-    padding-bottom: 30px;
-  }
-
-  .footer_social-media__nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-right: 7%;
-    gap: 30px;
-  }
-
-  .logo-footer {
-    align-self: center;
-    justify-self: center;
-    margin-right: 9%;
-    width: 135px;
-    height: 38px;
-  }
-
-  .footer-hyperlinks {
-    text-decoration: none;
-    color: #b7bcc0;
-    font-family: "Public Sans", sans-serif;
-    font-weight: bold;
-    margin-top: 10px;
-  }
-
-  .footer-hyperlinks__alignment {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 10%;
-    margin-left: 14%;
-  }
-
-  .footer-hyperlinks:hover {
-    color: #ffffff;
-  }
-
-  .footer-socials {
-    filter: none;
-    margin-top: 7px;
-  }
-
-  .footer-twitter {
-    filter: none;
-    margin-top: 8.5px;
-  }
-
-  .footer-socials:hover {
-    filter: brightness(0) saturate(100%) invert(72%) sepia(31%) saturate(5000%)
-      hue-rotate(297deg) brightness(93%) contrast(82%);
-  }
-
-  .footer-twitter:hover {
-    filter: brightness(0) saturate(100%) invert(72%) sepia(31%) saturate(5000%)
-      hue-rotate(297deg) brightness(93%) contrast(82%);
-  }
-}
-
-@media screen and (max-width: 480px) {
-  footer {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    background-color: #1b262f;
-    gap: 40px;
-    padding-top: 41px;
-    background-image: url("../images/shared/desktop/bg-pattern-circle.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 170px;
-  }
-
-  .footer_social-media__nav {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: center;
-    gap: 30px;
-    padding-bottom: 20px;
-    margin-right: 0;
-  }
-
-  .logo-footer {
-    align-self: center;
-    margin-right: 10px;
-    width: 135px;
-    height: 38px;
-  }
-
-  .footer-hyperlinks {
-    text-decoration: none;
-    color: #b7bcc0;
-    font-family: "Public Sans", sans-serif;
-    font-weight: bold;
-  }
-
-  .footer-hyperlinks__alignment {
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 0;
-  }
-
-  .footer-hyperlinks:hover {
-    color: #ffffff;
-  }
-
-  .footer-socials {
-    filter: none;
-  }
-
-  .footer-socials:hover {
-    filter: brightness(0) saturate(100%) invert(72%) sepia(31%) saturate(5000%)
-      hue-rotate(297deg) brightness(93%) contrast(82%);
   }
 }
 
@@ -895,6 +754,9 @@ header {
   font-family: "Public Sans", sans-serif;
 }
 
+@media screen and (max-width: 768px) {
+  
+}
 footer {
   display: flex;
   flex-direction: column;
@@ -943,7 +805,6 @@ footer {
   filter: brightness(0) saturate(100%) invert(72%) sepia(31%) saturate(5000%)
     hue-rotate(297deg) brightness(93%) contrast(82%);
 }
-
 @media screen and (min-width: 1440px) {
   .section__article-finance {
     flex-direction: row;
