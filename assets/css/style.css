@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
+body {
+  margin: 0;
+  background-color: #edf3f8;
+}
+
 .mobile__nav {
   display: flex;
   flex-direction: row;
@@ -95,11 +100,6 @@
   opacity: 1;
   line-height: 28px;
   margin: 12px 0px 0px 0px;
-}
-
-body {
-  margin: 0;
-  background-color: #edf3f8;
 }
 
 /* Removed duplicate mobile-overlay styles; see assets/css/mobile-menu.css */
@@ -317,7 +317,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 90px;
+  margin-top: 0px;
 }
 .home__p-finances {
   text-align: center;
@@ -399,40 +399,6 @@ header {
   font-weight: bold;
 }
 
-@media screen and (min-width: 768px) {
-  .section__article-finance {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 90%;
-    gap: 1.5rem;
-    margin-left: 39px;
-    margin-right: 39px;
-  }
-  .home__p-finances{
-    height: 92px;
-    font: normal normal 200 15px/25px Public Sans;
-    letter-spacing: -0.12px;
-    color: #6C8294;
-    opacity: 1;
-  }
-}
-
-.about__h1-style {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #6c8294;
-  font-family: "Public Sans", sans-serif;
-  width: 100%;
-}
-.about__h2-style {
-  display: flex;
-  align-items: center;
-  color: #6c8294;
-  font-family: "Public Sans", sans-serif;
-}
-
 footer {
   display: flex;
   flex-direction: column;
@@ -480,6 +446,26 @@ footer {
 .footer-socials:hover {
   filter: brightness(0) saturate(100%) invert(72%) sepia(31%) saturate(5000%) hue-rotate(297deg) brightness(93%) contrast(82%);;
 }
+
+@media screen and (min-width: 768px) {
+  .section__article-finance {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+    gap: 1.5rem;
+    margin-left: 39px;
+    margin-right: 39px;
+  }
+  .home__p-finances{
+    height: 92px;
+    font: normal normal 200 15px/25px Public Sans;
+    letter-spacing: -0.12px;
+    color: #6C8294;
+    opacity: 1;
+  }
+}
+
 @media screen and (min-width: 1440px) {
   .section__article-finance {
     flex-direction: row;
@@ -498,10 +484,3 @@ footer {
     opacity: 1;
   }
 }
-.home__p-finances{
-    height: 92px;
-    font: normal normal 200 15px/25px Public Sans;
-    letter-spacing: -0.12px;
-    color: #6C8294;
-    opacity: 1;
-  }
