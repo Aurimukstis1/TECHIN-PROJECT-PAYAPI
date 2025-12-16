@@ -67,27 +67,6 @@ footer {
 .footer-socials:hover {
   filter: brightness(0) saturate(100%) invert(72%) sepia(31%) saturate(5000%) hue-rotate(297deg) brightness(93%) contrast(82%);;
 }
-.table_size__style{
-    width: 327px;
-    height: 40px;
-    background: none;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    line-height: 25px;
-    text-align: left;
-    font: normal normal 200 15px/25px Public Sans;
-    letter-spacing: -0.12px;
-    color: #36536B;
-    opacity: 0.5;
-
-}
-.checkbox__style{
-    margin-top: 24px;
-}
-.submit__style{
-    margin-top: 32px;
-}
 
 @media screen and (min-width: 769px) {
     .contact-icons__grid {

@@ -268,5 +268,4 @@ footer {
 }
 
 .footer-socials:hover {
-  filter: brightness(0) saturate(100%) invert(72%) sepia(31%) saturate(5000%) hue-rotate(297deg) brightness(93%) contrast(82%);
-}
+  filter: brightness(0) saturate(100%) invert(72%) sepia(31%) saturate(5000%) hue-rotate(297deg) brightness(93%) contrast(82%);;
