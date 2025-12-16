@@ -614,14 +614,6 @@ header {
   }
 }
 
-@media screen and (max-width: 768px) {
-
-}
-
-@media screen and (max-width: 375px) {
- 
-}
-
 @media screen and (min-width: 1440px) {
   .section__article-finance {
     flex-direction: row;

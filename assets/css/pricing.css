@@ -1,11 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
   margin: 0;
-  background-color: #edf3f8;
+  background-color: #EDF3F8;
 }
-
-/* */
 
 .pricing-page-header {
   margin-bottom: 2rem;
@@ -128,9 +126,7 @@ body {
   }
 }
 
-/*  */
-
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .pricing-page-box {
     gap: 1rem;
     flex-direction: column;
@@ -187,8 +183,6 @@ body {
     }
   }
 }
-
-/*  */
 
 @media screen and (max-width: 768px) {
   .pricing-page-header {

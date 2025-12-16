@@ -116,72 +116,73 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-    .contact-icons__grid {
-        display: grid;
-        place-items: center;
-        justify-content: right;
-        margin-right: 18%;
-        gap: 40px 61px;
-        grid-template-rows: 20px 60px 20px;
-        grid-template-columns: 170px 70px 170px;
-        margin-bottom: 10%;
-        margin-top: 20px;
-    }
-    
-    #big {
-        display:inline-block;
-    }
+  .contact-icons__grid {
+      display: grid;
+      place-items: center;
+      justify-content: right;
+      margin-right: 18%;
+      gap: 40px 61px;
+      grid-template-rows: 20px 60px 20px;
+      grid-template-columns: 170px 70px 170px;
+      margin-bottom: 10%;
+      margin-top: 20px;
+  }
+  
+  #big {
+      display:inline-block;
+  }
 
-    #small {
-        display: none;
-    }
+  #small {
+      display: none;
+  }
 
-    h2 {
-        color: #647b8e;
-        grid-row: 1;
-        grid-column-start: 1;
-        grid-column-end: 4;
-        place-self: center start;
-        margin-right: 30px;
-    }
+  h2 {
+      color: #647b8e;
+      grid-row: 1;
+      grid-column-start: 1;
+      grid-column-end: 4;
+      place-self: center start;
+      margin-right: 30px;
+  }
 
-    .microsoft-size {
-        height: 31px;
-        width: 146px;
-    }
+  .microsoft-size {
+      height: 31px;
+      width: 146px;
+  }
 
-    .tesla-size {
-        height: 17px;
-        width: 130px;
-    }
+  .tesla-size {
+      height: 17px;
+      width: 130px;
+  }
 
-    .grid_align-left {
-        place-self: center start;
-    }
+  .grid_align-left {
+      place-self: center start;
+  }
 
-    .hp-size {
-        height: 27px;
-        width: 141px;
-    }
+  .hp-size {
+      height: 27px;
+      width: 141px;
+  }
 
-    .grid_align-right {
-        place-self: center end;
-    }
+  .grid_align-right {
+      place-self: center end;
+  }
 
-    .oracle-size {
-        height: 17px;
-        width: 132px;
-    }
+  .oracle-size {
+      height: 17px;
+      width: 132px;
+  }
 
-    .google-size {
-        height: 33px;
-        width: 97px;
-    }
+  .google-size {
+      height: 33px;
+      width: 97px;
+  }
 
-    .nvidia-size {
-        height: 26px;
-        width: 138px;
-    }
+  .nvidia-size {
+      height: 26px;
+      width: 138px;
+  }
+  
   footer {
     display: flex;
     flex-direction: row;
