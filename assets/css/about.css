@@ -1,75 +1,75 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 body {
-  margin: 0;
-  background-color: #edf3f8;
+    margin: 0;
+    background-color: #EDF3F8;
 }
 
-.about__h1-style {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #36536b;
-  font-family: "DM Serif Display", serif;
-  font-size: 32px;
-  width: 327px;
-  margin: auto;
-  box-sizing: border-box;
-  line-height: 36px;
+.about__h1-style{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #36536b;
+    font-family: "DM Serif Display", serif;
+    font-size: 32px;
+    width: 327px;
+    margin: auto;
+    box-sizing: border-box;
+    line-height: 36px;
 }
-.about__h2-style {
-  display: flex;
-  justify-content: center;
-  color: #36536b;
-  font-family: "DM Serif Display", serif;
-  font-size: 24px;
-  padding-left: 24px;
-  padding-right: 24px;
-  box-sizing: border-box;
-  line-height: 32px;
+.about__h2-style{
+    display: flex;
+    justify-content: center;
+    color: #36536b;
+    font-family: "DM Serif Display", serif;
+    font-size: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    box-sizing: border-box;
+    line-height: 32px;
 }
-.about__p-style {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  color: #6c8294;
-  font-family: "Public Sans", sans-serif;
-  font-size: 15px;
-  padding-left: 24px;
-  padding-right: 24px;
-  box-sizing: border-box;
-  line-height: 28px;
+.about__p-style{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #6c8294;
+    font-family:  "Public Sans", sans-serif;
+    font-size: 15px;
+    padding-left: 24px;
+    padding-right: 24px;
+    box-sizing: border-box;
+    line-height: 28px;
 }
-.teams__members-style {
-  border-bottom: 1px solid rgba(108, 130, 148, 0.25);
-  border-top: 1px solid rgba(108, 130, 148, 0.25);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  margin-left: 24px;
-  margin-right: 24px;
-  padding-bottom: 17px;
+.teams__members-style{
+    border-bottom: 1px solid rgba(108, 130, 148, 0.25);
+    border-top: 1px solid rgba(108, 130, 148, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: 24px;
+    margin-right: 24px;
+    padding-bottom: 17px;
 }
-.text__style1 {
-  font-family: "Public Sans", sans-serif;
-  color: #6c8294;
-  line-height: 72px;
+.text__style1{
+    font-family:  "Public Sans", sans-serif;
+    color: #6c8294;
+    line-height: 72px;
 }
-.text__style2 {
-  color: #ba4270;
-  font-family: "DM Serif Display", serif;
-  font-size: 56px;
-  text-align: center;
-  letter-spacing: -0.28px;
-  opacity: 1;
-  margin: 0px;
-  line-height: 36px;
+.text__style2{
+    color: #BA4270;
+    font-family: "DM Serif Display", serif;
+    font-size: 56px;
+    text-align: center;
+    letter-spacing: -0.28px;
+    opacity: 1;
+    margin: 0px;
+    line-height: 36px;
 }
-.img__style {
-  padding-top: 48px;
-  padding-bottom: 48px;
-  width: 100%;
+.img__style{
+    padding-top: 48px;
+    padding-bottom: 48px;
+    width: 100%;
 }
 .bigcircle {
   display: none;
@@ -210,6 +210,7 @@ body {
   .img__style {
     content: url(/assets/images/about/tablet/image-team-members.jpg);
   }
+
   footer {
     display: flex;
     flex-direction: row;
@@ -276,6 +277,7 @@ body {
       hue-rotate(297deg) brightness(93%) contrast(82%);
   }
 }
+
 @media screen and (min-width: 1440px) {
   .about__h1-style {
     width: 730px;
