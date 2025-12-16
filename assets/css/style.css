@@ -452,6 +452,11 @@ header {
   display: none;
 }
 
+@media screen and (min-width: 375px) {
+  .mobile__nav {
+    display: flex;
+  }
+
   footer {
     display: flex;
     flex-direction: column;
@@ -505,13 +510,19 @@ header {
     filter: none;
   }
 
-.footer-socials:hover {
-  filter: brightness(0) saturate(100%) invert(72%) sepia(31%) saturate(5000%) hue-rotate(297deg) brightness(93%) contrast(82%);
-}
+  .footer-twitter {
+    filter: none;
+    margin-top: 2.25px;
+  }
 
-@media screen and (min-width: 375px) {
-  .mobile__nav {
-    display: flex;
+  .footer-twitter:hover {
+    filter: brightness(0) saturate(100%) invert(72%) sepia(31%) saturate(5000%)
+      hue-rotate(297deg) brightness(93%) contrast(82%);
+  }
+
+  .footer-socials:hover {
+    filter: brightness(0) saturate(100%) invert(72%) sepia(31%) saturate(5000%)
+      hue-rotate(297deg) brightness(93%) contrast(82%);
   }
 
   .home__article_easy-to-impl__img-tablet{
@@ -720,7 +731,7 @@ header {
 @media screen and (min-width: 1440px) {
   .section__article-finance {
     flex-direction: row;
-    justify-content: center;
+    justify-content:center;
     align-items: stretch;
     gap: 30px;
     width: fit-content;
@@ -728,44 +739,11 @@ header {
     margin-right: auto;
   }
 
-  .home__p-finances {
+  .home__p-finances{
     height: 92px;
     font: normal normal 200 15px/25px Public Sans;
     letter-spacing: -0.12px;
-    color: #6c8294;
-    opacity: 1;
-  }
-
-  .home__article_easy-to-impl {
-      display: none;
-    }
-
-    .home__article_easy-to-impl__img {
-      display: none;
-    }
-
-    .home__article_easy-to-impl__img-tablet{
-      display: none;
-    }
-
-    .home__article_easy-to-impl_tablet{
-      display: none;
-    }
-
-    .home__article_easy-to-impl_desktop{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 150px 260px 0px 165px;
-    gap: 125px;
-  }
-
-  .home__article_easy-to-impl__img-desktop {
-    width: 445px;
-    height: 284px;
-    box-shadow: 25px 25px 80px #36536b4d;
-    border-radius: 8px;
+    color: #6C8294;
     opacity: 1;
   }
 
@@ -836,35 +814,5 @@ header {
   .footer-socials:hover {
     filter: brightness(0) saturate(100%) invert(72%) sepia(31%) saturate(5000%)
       hue-rotate(297deg) brightness(93%) contrast(82%);
-  }
-
-  .home__article_easy-to-impl__heading-desktop {
-    font-family: "DM Serif Display", serif;
-    font-size: 48px;
-    text-align: left;
-    letter-spacing: -0.37px;
-    color: #36536b;
-    opacity: 1;
-    margin: 0px;
-    line-height: 56px;
-  }
-
-  .home__article_easy-to-impl_container-desktop {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-
-  .home__article_easy-to-impl__text-desktop {
-    text-align: left;
-    font-family: "Public Sans", sans-serif;
-    font-weight: 200;
-    font-size: 15px;
-    letter-spacing: 0px;
-    color: #6c8294;
-    opacity: 1;
-    line-height: 28px;
-    margin: 8px 0px 0px 0px;
   }
 }
