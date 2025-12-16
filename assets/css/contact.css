@@ -5,19 +5,40 @@ body {
     background-color: #EDF3F8;
 }
 
-/* */
-
 .contact-page-header {
     margin-left: 165px;
     margin-top: 80px;
     width: 730px;
-
     font-family: "DM Serif Display", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 56px;
     line-height: 56px;
     color: #36536B;
+}
+
+.table_size__style{
+    width: 327px;
+    height: 40px;
+    background: none;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    line-height: 25px;
+    text-align: left;
+    font: normal normal 200 15px/25px Public Sans;
+    letter-spacing: -0.12px;
+    color: #36536B;
+    opacity: 0.5;
+
+}
+
+.checkbox__style{
+    margin-top: 24px;
+}
+
+.submit__style{
+    margin-top: 32px;
 }
 
 footer {
@@ -65,47 +86,47 @@ footer {
 }
 
 .footer-socials:hover {
-  filter: brightness(0) saturate(100%) invert(72%) sepia(31%) saturate(5000%) hue-rotate(297deg) brightness(93%) contrast(82%);;
+  filter: brightness(0) saturate(100%) invert(72%) sepia(31%) saturate(5000%) hue-rotate(297deg) brightness(93%) contrast(82%);
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
     .contact-icons__grid {
-    display: grid;
-    place-items: center;
-    justify-content: right;
-    margin-right: 18%;
-    gap: 40px 61px;
-    grid-template-rows: 20px 60px 20px;
-    grid-template-columns: 170px 70px 170px;
-    margin-bottom: 10%;
-    margin-top: 20px;
+        display: grid;
+        place-items: center;
+        justify-content: right;
+        margin-right: 18%;
+        gap: 40px 61px;
+        grid-template-rows: 20px 60px 20px;
+        grid-template-columns: 170px 70px 170px;
+        margin-bottom: 10%;
+        margin-top: 20px;
     }
     
     #big {
-    display:inline-block;
+        display:inline-block;
     }
 
     #small {
-    display: none;
+        display: none;
     }
 
     h2 {
-    color: #647b8e;
-    grid-row: 1;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    place-self: center start;
-    margin-right: 30px;
+        color: #647b8e;
+        grid-row: 1;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        place-self: center start;
+        margin-right: 30px;
     }
 
     .microsoft-size {
-    height: 31px;
-    width: 146px;
+        height: 31px;
+        width: 146px;
     }
 
     .tesla-size {
-    height: 17px;
-    width: 130px;
+        height: 17px;
+        width: 130px;
     }
 
     .grid_align-left {
@@ -113,27 +134,27 @@ footer {
     }
 
     .hp-size {
-    height: 27px;
-    width: 141px;
+        height: 27px;
+        width: 141px;
     }
 
     .grid_align-right {
-    place-self: center end;
+        place-self: center end;
     }
 
     .oracle-size {
-    height: 17px;
-    width: 132px;
+        height: 17px;
+        width: 132px;
     }
 
     .google-size {
-    height: 33px;
-    width: 97px;
+        height: 33px;
+        width: 97px;
     }
 
     .nvidia-size {
-    height: 26px;
-    width: 138px;
+        height: 26px;
+        width: 138px;
     }
 }
 
@@ -148,36 +169,38 @@ footer {
         max-height: 178px;
         text-align: center;
     }
+
     .contact-icons__grid {
-    display: grid;
-    place-items: center;
-    justify-content: center;
-    gap: 40px 100px;
-    grid-template-rows: 35px 45px 45px;
-    grid-template-columns: 120px 45px 120px;
-    margin-top: 40px;
-    margin-bottom: 50px;
-    margin-left: 0;
+        display: grid;
+        place-items: center;
+        justify-content: center;
+        gap: 40px 100px;
+        grid-template-rows: 35px 45px 45px;
+        grid-template-columns: 120px 45px 120px;
+        margin-top: 40px;
+        margin-bottom: 50px;
+        margin-left: 0;
     }
+
     h2 {
-    text-align: center;
-    color: #647b8e;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    place-self: center;
+        text-align: center;
+        color: #647b8e;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        place-self: center;
     }
 
     #big {
-    display: none;
+        display: none;
     }
 
     #small {
-    display: inline-block;
+        display: inline-block;
     }
 
     .microsoft-size {
-    height: 31px;
-    width: 146px;
+        height: 31px;
+        width: 146px;
     }
 
     .tesla-size {
@@ -208,45 +231,47 @@ footer {
 
 @media screen and (max-width: 480px) {
     .contact-page-header {
-    margin-top: 60px;
-    font-size: 32px;
-    line-height: 36px;
-    margin-left: 24px;
-    margin-right: 24px;
-    max-width: 327px;
-    max-height: 116px;
-    text-align: center;
+        margin-top: 60px;
+        font-size: 32px;
+        line-height: 36px;
+        margin-left: 24px;
+        margin-right: 24px;
+        max-width: 327px;
+        max-height: 116px;
+        text-align: center;
     }
+
     .contact-icons__grid {
-    display: grid;
-    place-items: center;
-    justify-content: center;
-    gap: 45px 90px;
-    grid-template-rows: 80px 20px 20px 20px;
-    grid-template-columns: 97px 97px;
-    margin-top: 40px;
-    margin-bottom: 0;
-    margin-left: 0;
+        display: grid;
+        place-items: center;
+        justify-content: center;
+        gap: 45px 90px;
+        grid-template-rows: 80px 20px 20px 20px;
+        grid-template-columns: 97px 97px;
+        margin-top: 40px;
+        margin-bottom: 0;
+        margin-left: 0;
     }
+
     h2 {
-    text-align: center;
-    color: #647b8e;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    place-self: center;
+        text-align: center;
+        color: #647b8e;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        place-self: center;
     }
     
     #big {
-    display: none;
+        display: none;
     }
 
     #small {
-    display: inline-block;
+        display: inline-block;
     }
 
     .microsoft-size {
-    height: 26px;
-    width: 120px;
+        height: 26px;
+        width: 120px;
     }
 
     .tesla-size {

@@ -74,6 +74,55 @@ body {
 .bigcircle{
     display: none;
 }
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: #1b262f;
+    gap: 40px;
+    padding-top: 41px;
+    background-image: url("../images/shared/desktop/bg-pattern-circle.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 188px;
+}
+
+.footer_social-media__nav {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 41px;
+}
+
+.logo-footer {
+    align-self: center;
+    margin-right: 10px;
+    width: 135px;
+    height: 38px;
+}
+
+.footer-hyperlinks {
+    text-decoration: none;
+    color: #b7bcc0;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: bold;
+}
+
+.footer-hyperlinks:hover {
+  color: #ffffff;
+}
+
+.footer-socials {
+  filter: none;
+}
+
+.footer-socials:hover {
+  filter: brightness(0) saturate(100%) invert(72%) sepia(31%) saturate(5000%) hue-rotate(297deg) brightness(93%) contrast(82%);
+}
+
 @media screen and (min-width: 768px){
     .about__h1-style{
         align-items: center;
@@ -188,84 +237,7 @@ body {
         display: block;
         position: absolute;
         left: -35rem;
-        /* top: 17vh; */
         top: 32rem;
         z-index: -1;
     }
-
 }
-/* @media screen and (min-width: 1440px) {
-    .teams__members-style{
-        border: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: row;
-        text-align: left;
-        gap: 30px;
-        margin-left: 165px;
-        margin-right: 165px;
-    }
-    .about__h1-style{
-        padding-left: 260px;
-        padding-right: 260px;
-    }
-    .about__h1-style{
-        padding-left: 260px;
-        padding-right: 450px;
-    }
-    .bigcircle{
-        display: block;
-        position: absolute;
-        left: -35rem;
-        top: 12.5rem;
-        z-index: -1;
-    }
-} */
-
-footer {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    background-color: #1b262f;
-    gap: 40px;
-    padding-top: 41px;
-    background-image: url("../images/shared/desktop/bg-pattern-circle.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 188px;
-}
-
-.footer_social-media__nav {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: center;
-    gap: 30px;
-    padding-bottom: 41px;
-}
-
-.logo-footer {
-    align-self: center;
-    margin-right: 10px;
-    width: 135px;
-    height: 38px;
-}
-
-.footer-hyperlinks {
-    text-decoration: none;
-    color: #b7bcc0;
-    font-family: 'Public Sans', sans-serif;
-    font-weight: bold;
-}
-
-.footer-hyperlinks:hover {
-  color: #ffffff;
-}
-
-.footer-socials {
-  filter: none;
-}
-
-.footer-socials:hover {
-  filter: brightness(0) saturate(100%) invert(72%) sepia(31%) saturate(5000%) hue-rotate(297deg) brightness(93%) contrast(82%);;
