@@ -452,54 +452,61 @@ header {
   display: none;
 }
 
-footer {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  background-color: #1b262f;
-  gap: 40px;
-  padding-top: 41px;
-  background-image: url("../images/shared/desktop/bg-pattern-circle.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 188px;
-}
+  footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: #1b262f;
+    gap: 44px;
+    padding-top: 46.29px;
+    background-image: url("../images/shared/desktop/bg-pattern-circle.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 192px;
+  }
 
-.footer_social-media__nav {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  text-align: center;
-  justify-content: center;
-  gap: 30px;
-  padding-bottom: 41px;
-}
+  .footer_social-media__nav {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    gap: 24px;
+    padding-bottom: 55px;
+    margin-right: 0;
+  }
 
-.logo-footer {
-  align-self: center;
-  margin-right: 10px;
-  width: 135px;
-  height: 38px;
-}
+  .logo-footer {
+    margin-right: 10px;
+    margin-bottom: 11.97px;
+    width: 135px;
+    height: 38px;
+  }
 
-.footer-hyperlinks {
-  text-decoration: none;
-  color: #b7bcc0;
-  font-family: "Public Sans", sans-serif;
-  font-weight: bold;
-}
+  .footer-hyperlinks {
+    text-decoration: none;
+    color: #b7bcc0;
+    font-family: "Public Sans", sans-serif;
+    font-weight: bold;
+  }
 
-.footer-hyperlinks:hover {
-  color: #ffffff;
-}
+  .footer-hyperlinks__alignment {
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0;
+  }
 
-.footer-socials {
-  filter: none;
-}
+  .footer-hyperlinks:hover {
+    color: #ffffff;
+  }
+
+  .footer-socials {
+    filter: none;
+  }
 
 .footer-socials:hover {
-  filter: brightness(0) saturate(100%) invert(72%) sepia(31%) saturate(5000%)
-    hue-rotate(297deg) brightness(93%) contrast(82%);
+  filter: brightness(0) saturate(100%) invert(72%) sepia(31%) saturate(5000%) hue-rotate(297deg) brightness(93%) contrast(82%);
 }
 
 @media screen and (min-width: 375px) {
@@ -643,34 +650,27 @@ footer {
     background: #ba4270 0% 0% no-repeat padding-box;
     border: none;
   }
-}
-
-@media screen and (max-width: 768px) {
+  
   footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: #1b262f;
-    gap: 5%;
     background-image: url("../images/shared/desktop/bg-pattern-circle.svg");
     background-repeat: no-repeat;
-    background-position: 372.5px 20%;
+    background-position: 385px 20%;
     padding-top: 41px;
-    padding-bottom: 30px;
   }
 
   .footer_social-media__nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-right: 7%;
-    gap: 30px;
+    margin-right: 40px;
+    gap: 24px;
   }
 
   .logo-footer {
-    align-self: center;
-    justify-self: center;
-    margin-right: 9%;
     width: 135px;
     height: 38px;
   }
@@ -680,6 +680,7 @@ footer {
     color: #b7bcc0;
     font-family: "Public Sans", sans-serif;
     font-weight: bold;
+    font-size: 17px;
     margin-top: 10px;
   }
 
@@ -687,8 +688,8 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 10%;
-    margin-left: 14%;
+    gap: 40px;
+    margin-left: 39.76px;
   }
 
   .footer-hyperlinks:hover {
@@ -705,64 +706,9 @@ footer {
     margin-top: 8.5px;
   }
 
-  .footer-socials:hover {
+  .footer-twitter:hover {
     filter: brightness(0) saturate(100%) invert(72%) sepia(31%) saturate(5000%)
       hue-rotate(297deg) brightness(93%) contrast(82%);
-  }
-}
-
-@media screen and (max-width: 375px) {
-  footer {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    background-color: #1b262f;
-    gap: 40px;
-    padding-top: 41px;
-    background-image: url("../images/shared/desktop/bg-pattern-circle.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 170px;
-  }
-
-  .footer_social-media__nav {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: center;
-    gap: 30px;
-    padding-bottom: 20px;
-    margin-right: 0;
-  }
-
-  .logo-footer {
-    align-self: center;
-    margin-right: 10px;
-    width: 135px;
-    height: 38px;
-  }
-
-  .footer-hyperlinks {
-    text-decoration: none;
-    color: #b7bcc0;
-    font-family: "Public Sans", sans-serif;
-    font-weight: bold;
-  }
-
-  .footer-hyperlinks__alignment {
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 0;
-  }
-
-  .footer-hyperlinks:hover {
-    color: #ffffff;
-  }
-
-  .footer-socials {
-    filter: none;
   }
 
   .footer-socials:hover {
@@ -821,6 +767,75 @@ footer {
     box-shadow: 25px 25px 80px #36536b4d;
     border-radius: 8px;
     opacity: 1;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #1b262f;
+    background-image: url("../images/shared/desktop/bg-pattern-circle.svg");
+    background-repeat: no-repeat;
+    background-position: 1000px -100px;
+    padding-top: 41px;
+    padding-bottom: 36px;
+  }
+
+  .footer_social-media__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 165px;
+    gap: 24px;
+    padding-bottom: 0;
+  }
+
+  .logo-footer {
+    width: 135px;
+    height: 38px;
+    margin-left: 164.76px;
+    margin-right: 24.34px;
+  }
+
+  .footer-hyperlinks {
+    text-decoration: none;
+    color: #b7bcc0;
+    font-family: "Public Sans", sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    margin-top: 10px;
+  }
+
+  .footer-hyperlinks__alignment {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    margin-left: 39.76px;
+  }
+
+  .footer-hyperlinks:hover {
+    color: #ffffff;
+  }
+
+  .footer-socials {
+    filter: none;
+    margin-top: 7px;
+  }
+
+  .footer-twitter {
+    filter: none;
+    margin-top: 8.5px;
+  }
+
+  .footer-twitter:hover {
+    filter: brightness(0) saturate(100%) invert(72%) sepia(31%) saturate(5000%)
+      hue-rotate(297deg) brightness(93%) contrast(82%);
+  }
+
+  .footer-socials:hover {
+    filter: brightness(0) saturate(100%) invert(72%) sepia(31%) saturate(5000%)
+      hue-rotate(297deg) brightness(93%) contrast(82%);
   }
 
   .home__article_easy-to-impl__heading-desktop {
