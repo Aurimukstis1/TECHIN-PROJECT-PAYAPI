@@ -16,27 +16,31 @@ body {
     line-height: 56px;
     color: #36536B;
 }
+
 /*contact_table_start*/
 
 /*Form lenteles stylius*/
+
 .contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 26px;
-    margin-left: 24px;
-    margin-right: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  margin-left: 24px;
+  margin-right: 24px;
 }
+
 /*Form style*/
+
 input,
 textarea {
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid #7a94ad;
-    padding-bottom: 23px;
-    padding-left: 20px;
-    padding-right: 6px;
-    font-size: 15px;
-    color: #2c3e50;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #7a94ad;
+  padding-bottom: 23px;
+  padding-left: 20px;
+  padding-right: 6px;
+  font-size: 15px;
+  color: #2c3e50;
 }
 
 input::placeholder,
@@ -50,21 +54,24 @@ textarea::placeholder {
 
 input:focus,
 textarea:focus {
-    outline: none;
-    border-bottom-color: #2c3e50;
+  outline: none;
+  border-bottom-color: #2c3e50;
 }
 
 textarea {
-    resize: none;
-    height: 80px;
+  resize: none;
+  height: 80px;
 }
+
 /*checkbox style*/
+
 .checkbox-text{
   color: #36536B;
   font-size: 15px;
   font-family: "Public Sans", Light;
   line-height: 25px;
 }
+
 .checkbox-row {
   display: block;
   position: relative;
@@ -77,6 +84,7 @@ textarea {
   -ms-user-select: none;
   user-select: none;
 }
+
 .checkbox-row input {
   position: absolute;
   opacity: 0;
@@ -84,6 +92,7 @@ textarea {
   height: 0;
   width: 0;
 }
+
 .custom-box {
   position: absolute;
   top: 0;
@@ -92,20 +101,25 @@ textarea {
   width: 24px;
   background-color: #36536B40;
 }
+
 .checkbox-row:hover input ~ .custom-box {
   background-color: #36536B40;
 }
+
 .checkbox-row input:checked ~ .custom-box {
   background-color: #BA4270;
 }
+
 .custom-box:after {
   content: "";
   position: absolute;
   display: none;
 }
+
 .checkbox-row input:checked ~ .custom-box:after {
   display: block;
 }
+
 .checkbox-row .custom-box:after {
   left: 9px;
   top: 5px;
@@ -117,30 +131,32 @@ textarea {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
 /*button style*/
+
 button {
-    width: 152px;
-    height: 48px;
-    padding-left: 51px;
-    padding-bottom: 15px;
-    padding-right: 49px;
-    padding-top: 16px;
-    border-radius: 24px;
-    border: 1px solid #36536B;
-    background: transparent;
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 15px;
-    letter-spacing: -0.12px;
-    text-align: center;
-    opacity: 1;
-    line-height: 17px;
-    color: #36536B;
+  width: 152px;
+  height: 48px;
+  padding-left: 51px;
+  padding-bottom: 15px;
+  padding-right: 49px;
+  padding-top: 16px;
+  border-radius: 24px;
+  border: 1px solid #36536B;
+  background: transparent;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 15px;
+  letter-spacing: -0.12px;
+  text-align: center;
+  opacity: 1;
+  line-height: 17px;
+  color: #36536B;
 }
 
 button:hover {
-    background: #36536B;
-    color: white;
+  background: #36536B;
+  color: white;
 }
 
 /*contact_table_end*/
@@ -286,19 +302,23 @@ button:hover {
       height: 26px;
       width: 138px;
   }
+
   /*contact_table_start*/
 
-/*Form lenteles stylius*/
-.contact-form {
+  /*Form lenteles stylius*/
+
+  .contact-form {
     display: flex;
     flex-direction: column;
     gap: 26px;
     margin-left: 162px;
     margin-right: 161px;
-}
-/*Form style*/
-input,
-textarea {
+  }
+
+  /*Form style*/
+
+  input,
+  textarea {
     background: transparent;
     border: none;
     border-bottom: 1px solid #7a94ad;
@@ -307,88 +327,100 @@ textarea {
     padding-right: 6px;
     font-size: 15px;
     color: #2c3e50;
-}
+  }
 
-input::placeholder,
-textarea::placeholder {
-  text-align: left;
-  font: normal normal 200 15px/25px Public Sans;
-  letter-spacing: -0.12px;
-  color: #36536B;
-  opacity: 0.5;
-}
+  input::placeholder,
+  textarea::placeholder {
+    text-align: left;
+    font: normal normal 200 15px/25px Public Sans;
+    letter-spacing: -0.12px;
+    color: #36536B;
+    opacity: 0.5;
+  }
 
-input:focus,
-textarea:focus {
+  input:focus,
+  textarea:focus {
     outline: none;
     border-bottom-color: #2c3e50;
-}
+  }
 
-textarea {
+  textarea {
     resize: none;
     height: 80px;
-}
-/*checkbox style*/
-.checkbox-text{
-  color: #36536B;
-  font-size: 15px;
-  font-family: "Public Sans", Light;
-  line-height: 25px;
-}
-.checkbox-row {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-.checkbox-row input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-.custom-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 24px;
-  width: 24px;
-  background-color: #36536B40;
-}
-.checkbox-row:hover input ~ .custom-box {
-  background-color: #36536B40;
-}
-.checkbox-row input:checked ~ .custom-box {
-  background-color: #BA4270;
-}
-.custom-box:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-.checkbox-row input:checked ~ .custom-box:after {
-  display: block;
-}
-.checkbox-row .custom-box:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-/*button style*/
-button {
+  }
+
+  /*checkbox style*/
+
+  .checkbox-text{
+    color: #36536B;
+    font-size: 15px;
+    font-family: "Public Sans", Light;
+    line-height: 25px;
+  }
+
+  .checkbox-row {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .checkbox-row input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  .custom-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    background-color: #36536B40;
+  }
+
+  .checkbox-row:hover input ~ .custom-box {
+    background-color: #36536B40;
+  }
+
+  .checkbox-row input:checked ~ .custom-box {
+    background-color: #BA4270;
+  }
+
+  .custom-box:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .checkbox-row input:checked ~ .custom-box:after {
+    display: block;
+  }
+
+  .checkbox-row .custom-box:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  /*button style*/
+
+  button {
     width: 152px;
     height: 48px;
     padding-left: 51px;
@@ -406,12 +438,12 @@ button {
     opacity: 1;
     line-height: 17px;
     color: #36536B;
-}
+  }
 
-button:hover {
+  button:hover {
     background: #36536B;
     color: white;
-}
+  }
 
 /*contact_table_end*/
   
@@ -652,11 +684,13 @@ button:hover {
     margin-left: 164.76px;
     margin-right: 24.34px;
   }
+
   .desktop__style{
     display: flex;
     flex-direction: row;
     align-items: center;
   }
+
   .contact-form {
     display: flex;
     flex-direction: column;
