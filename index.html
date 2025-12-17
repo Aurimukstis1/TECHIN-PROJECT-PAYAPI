@@ -192,27 +192,46 @@
 
       <article>
         <div class="home__article_easy-to-impl_desktop">
-        <img class="home__article_easy-to-impl__img-desktop" src="assets/images/home/desktop/illustration-easy-to-implement-modified-2.svg" alt="Easy to implement illustration">
-        <div class="home__article_easy-to-impl_container-desktop">
-          <p class="home__article_easy-to-impl__heading-desktop">
-            Easy to implement
-          </p>
-          <p class="home__article_easy-to-impl__text-desktop">
-            Our API comes with just a few lines of code. You’ll be up and
-            running in no time. We built our documentation page to integrate
-            payments functionality with ease.
-          </p>
-        </div>
+          <img
+            class="home__article_easy-to-impl__img-desktop"
+            src="assets/images/home/desktop/illustration-easy-to-implement-modified-2.svg"
+            alt="Easy to implement illustration"
+          />
+          <div class="home__article_easy-to-impl_container-desktop">
+            <p class="home__article_easy-to-impl__heading-desktop">
+              Easy to implement
+            </p>
+            <p class="home__article_easy-to-impl__text-desktop">
+              Our API comes with just a few lines of code. You’ll be up and
+              running in no time. We built our documentation page to integrate
+              payments functionality with ease.
+            </p>
+          </div>
         </div>
       </article>
 
       <article>
-        <div class="positions">
-          <img
-            class="home__article_simple-img"
-            src="assets/images/home/desktop/illustration-simple-ui-modified.svg"
-            alt="Simple UI illustration"
-          />
+        <div>
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                assets/images/home/desktop/illustration-simple-ui-tablet_desktop.svg
+              "
+            />
+            <source
+              media="(min-width: 1440px)"
+              srcset="
+                assets/images/home/desktop/illustration-simple-ui-modified.svg
+              "
+            />
+            <img
+              class="home__article_simple-img"
+              src="assets/images/home/desktop/illustration-simple-ui-modified.svg"
+              media="(min-width: 375px)"
+              alt="Simple UI illustration"
+            />
+          </picture>
           <div class="home__article_simple">
             <p class="home__article_simple-heading">Simple UI & UX</p>
             <p class="home__article_simple-text">
@@ -288,37 +307,38 @@
       </div>
     </section>
 
-        <footer>
-            <div class="footer-hyperlinks__alignment">
-                <a href="./index.html"><img
-                    src="./assets/images/shared/desktop/white-logo.svg"
-                    alt=""
-                    class="logo-footer"
-                /></a>
-                <a href="./pricing.html" class="footer-hyperlinks">Pricing</a>
-                <a href="./about.html" class="footer-hyperlinks">About</a>
-                <a href="./contact.html" class="footer-hyperlinks">Contact</a>
-            </div>
-            <div class="footer_social-media__nav">
-                <a href="https://www.facebook.com/"
-                    ><img
-                        src="./assets/images/shared/desktop/facebook.svg"
-                        alt="facebook logo"
-                        class="footer-socials"
-                /></a>
-                <a href="https://bsky.app/"
-                    ><img
-                        src="./assets/images/shared/desktop/twitter.svg"
-                        alt="twitter logo"
-                        class="footer-twitter"
-                /></a>
-                <a href="https://www.linkedin.com/"
-                    ><img
-                        src="./assets/images/shared/desktop/linkedin.svg"
-                        alt="linkedin logo"
-                        class="footer-socials"
-                /></a>
-            </div>
-        </footer>
-    </body>
+    <footer>
+      <div class="footer-hyperlinks__alignment">
+        <a href="./index.html"
+          ><img
+            src="./assets/images/shared/desktop/white-logo.svg"
+            alt=""
+            class="logo-footer"
+        /></a>
+        <a href="./pricing.html" class="footer-hyperlinks">Pricing</a>
+        <a href="./about.html" class="footer-hyperlinks">About</a>
+        <a href="./contact.html" class="footer-hyperlinks">Contact</a>
+      </div>
+      <div class="footer_social-media__nav">
+        <a href="https://www.facebook.com/"
+          ><img
+            src="./assets/images/shared/desktop/facebook.svg"
+            alt="facebook logo"
+            class="footer-socials"
+        /></a>
+        <a href="https://bsky.app/"
+          ><img
+            src="./assets/images/shared/desktop/twitter.svg"
+            alt="twitter logo"
+            class="footer-twitter"
+        /></a>
+        <a href="https://www.linkedin.com/"
+          ><img
+            src="./assets/images/shared/desktop/linkedin.svg"
+            alt="linkedin logo"
+            class="footer-socials"
+        /></a>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -549,6 +549,38 @@ header {
     margin: 8px 0px 0px 0px;
   }
 
+
+.home__article_simple-img{
+  margin-top: 50px;
+  display: block;
+  margin-left: 152px;
+  margin-right: auto;
+  
+}
+
+.home__article_simple {
+  position: relative;
+  top: -48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 97px;
+  margin-right: 98px;
+}
+
+.home__article_simple-heading {
+  font-family: "DM Serif Display", serif;
+  font-size: 48px;
+  text-align: center;
+  letter-spacing: -0.37px;
+  color: #36536b;
+  opacity: 1;
+  margin: 0px;
+  line-height: 56px;
+}
+
+
   .section__article-finance {
     display: flex;
     flex-direction: row;
