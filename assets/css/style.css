@@ -380,6 +380,9 @@ header {
   color: #ffffff;
   cursor: pointer;
 }
+.schedule-demo:hover {
+  background-color: #da6d97;
+}
 .phone-mockup__prop {
   height: 400px;
   width: 285px;
@@ -599,6 +602,10 @@ header {
     opacity: 0.7;
   }
 
+  .tablet_nav a:hover {
+    color: #36536b;
+  }
+
   .button_schedule-a-demo {
     font-family: "Public Sans";
     font-weight: 700;
@@ -612,6 +619,10 @@ header {
     opacity: 1;
     background: #ba4270 0% 0% no-repeat padding-box;
     border: none;
+  }
+  
+  .button_schedule-a-demo:hover {
+    background: #da6d97 0% 0% no-repeat padding-box;
   }
 
   footer {
