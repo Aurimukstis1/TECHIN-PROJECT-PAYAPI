@@ -66,16 +66,18 @@ textarea {
 /*checkbox style*/
 
 .checkbox-text{
-  color: #36536B;
+  font: normal normal 200 15px/25px Public Sans;
+  letter-spacing: -0.12px;
   font-size: 15px;
-  font-family: "Public Sans", Light;
   line-height: 25px;
+  color: #36536B;
+  opacity: 1;
 }
 
 .checkbox-row {
   display: block;
   position: relative;
-  padding-left: 35px;
+  padding-left: 50px;
   margin-bottom: 12px;
   cursor: pointer;
   font-size: 22px;
@@ -99,6 +101,7 @@ textarea {
   left: 0;
   height: 24px;
   width: 24px;
+  margin-top: 20px;
   background-color: #36536B40;
 }
 
