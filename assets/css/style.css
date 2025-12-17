@@ -633,7 +633,7 @@ header {
 
   .button_schedule-a-demo {
     font-family: "Public Sans";
-    font-weight: 700;
+    font-weight: 600;
     font-size: 15px;
     width: 173px;
     height: 48px;
@@ -644,6 +644,7 @@ header {
     opacity: 1;
     background: #ba4270 0% 0% no-repeat padding-box;
     border: none;
+    box-shadow: 10px 10px 20px #36536B40;
   }
 
   footer {
