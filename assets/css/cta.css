@@ -11,6 +11,11 @@
   align-items: center;
 }
 
+.home-cta-container {
+  max-width: 327px;
+  margin: auto;
+}
+
 .cta-ready__title {
   color: #36536B;
   font-family: "DM Serif Display", serif;
@@ -19,6 +24,11 @@
   text-align: center;
   font-size: 32px;
   margin: 0;
+}
+
+.home-cta-title {
+  font-size: 48px;
+  line-height: 56px;
 }
 
 .cta-ready__form {
