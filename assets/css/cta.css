@@ -47,6 +47,9 @@
   height: 48px;
   border: none;
   border-radius: 24px;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 17px;
   padding: 0 20px;
   color: #36536B;
   background: #FBFCFE;
@@ -55,6 +58,13 @@
 
 .cta-ready__input::placeholder { color: rgba(54, 83, 107, 0.6); font-weight: bolder; }
 .cta-ready__input:focus { outline: 2px solid #BA4270; outline-offset: 2px; }
+
+.cta-input-home::placeholder {
+  font-family: "Public Sans", sans-serif;
+  color: #36536B;
+  opacity: 0.5;
+  font-weight: 800;
+}
 
 .cta-ready__button {
   height: 48px;
@@ -67,6 +77,12 @@
   letter-spacing: 0.2px;
   box-shadow: none;
   cursor: pointer;
+}
+
+.cta-button-home {
+  font-style: "Public Sans", sans-serif;
+  font-size: 15px;
+  line-height: 17px;
 }
 
 .cta-ready__button:hover { background: #DA6D97; }
@@ -83,13 +99,15 @@
 }
 
 .cta-home-help {
+  color: #6C8294;
   font-family: "Public Sans", sans-serif;
   font-size: 15px;
   line-height: 17px;
 
   & a {
     font-weight: bold;
-    text-decoration: underline;
+    text-decoration: none;
+    border-bottom: 1px solid;
   }
 }
 
@@ -132,6 +150,10 @@
     box-shadow: 10px 10px 25px rgba(54, 83, 107, 0.25), inset 0 0 0 1px rgba(54, 83, 107, 0.08);
   }
 
+  .cta-input-home {
+    height: 48px;
+  }
+
   .cta-ready__button {
     position: absolute;
     right: 0px;
@@ -141,17 +163,22 @@
     white-space: nowrap;
   }
 
+  .cta-button-home {
+    height: 48px;
+  }
+
   .cta-ready__help { margin-top: 20px; }
 
   .cta-home-help {
+    color: #6C8294;
     font-family: "Public Sans", sans-serif;
     font-size: 15px;
     line-height: 17px;
-    margin-top: 1rem;
 
     & a {
       font-weight: bold;
-      text-decoration: underline;
+      text-decoration: none;
+      border-bottom: 1px solid;
     }
   }
 }
@@ -212,9 +239,17 @@
     white-space: nowrap;
   }
 
+  .cta-input-home {
+    height: 48px;
+  }
+  .cta-button-home {
+    height: 48px;
+  }
+
   .cta-ready__help { margin-top: 26px; }
 
   .cta-home-help {
+    margin-left: 27px;
     margin-right: 294px;
   }
 }
