@@ -2,6 +2,10 @@
 
 .cta-ready { background: #EDF3F8; padding: 48px 24px; }
 
+.cta-ready-home {
+  padding: 0;
+}
+
 .cta-ready__container {
   max-width: 1110px;
   margin: 0 auto;
@@ -12,8 +16,9 @@
 }
 
 .home-cta-container {
-  max-width: 327px;
-  margin: auto;
+  max-width: 100%;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 .cta-ready__title {
@@ -27,8 +32,8 @@
 }
 
 .home-cta-title {
-  font-size: 48px;
-  line-height: 56px;
+  font-size: 32px;
+  line-height: 36px;
 }
 
 .cta-ready__form {
@@ -77,13 +82,33 @@
   font-size: 14px;
 }
 
+.cta-home-help {
+  font-family: "Public Sans", sans-serif;
+  font-size: 15px;
+  line-height: 17px;
+
+  & a {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+}
+
 /* Tablet: input and button side-by-side */
 @media (min-width: 768px) {
-  .cta-ready { padding: 56px 32px; }
+  .cta-ready { display: flex; width: 100%; flex-direction: column; align-items: center; box-sizing: border-box;}
+
+  .home-cta-container {
+    max-width: 573px;
+  }
 
   .cta-ready__title {
     font-size: 40px;
     text-align: center;
+  }
+
+  .home-cta-title {
+    font-size: 48px;
+    line-height: 56px;
   }
 
   /* Tablet: input extends under button */
@@ -92,6 +117,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .cta-home-form {
+    margin-left: 64px;
+    margin-right: 64px;
   }
 
   .cta-ready__input {
@@ -104,7 +134,7 @@
 
   .cta-ready__button {
     position: absolute;
-    right: 8px;
+    right: 0px;
     height: 56px;
     border-radius: 999px;
     padding: 0 28px;
@@ -112,6 +142,18 @@
   }
 
   .cta-ready__help { margin-top: 20px; }
+
+  .cta-home-help {
+    font-family: "Public Sans", sans-serif;
+    font-size: 15px;
+    line-height: 17px;
+    margin-top: 1rem;
+
+    & a {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  }
 }
 
 /* Desktop: title left, form right */

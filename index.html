@@ -46,24 +46,28 @@
         alt="a phone mockup image"
         class="phone-mockup__prop"
       />
-      <div class="cta-ready__container home-cta-container">
-        <h2 id="cta-ready-title home-cta-title" class="cta-ready__title home-cta-title">Start building with our APIs for absolutely free.</h2>
-        <form class="cta-ready__form" action="#" method="post" novalidate>
-          <label class="visually-hidden" for="cta-email">Email address</label>
-          <input
-            id="cta-email"
-            class="cta-ready__input"
-            type="email"
-            name="email"
-            placeholder="Enter email address"
-            aria-describedby="cta-help"
-          />
-          <button type="submit" class="cta-ready__button">
-            Schedule a Demo
-          </button>
-          <p id="cta-help" class="cta-ready__help" aria-live="polite"></p>
-        </form>
-      </div>
+      <section class="cta-ready cta-ready-home">
+        <div class="cta-ready__container home-cta-container">
+          <h2 id="cta-ready-title home-cta-title" class="cta-ready__title home-cta-title">Start building with our APIs for absolutely free.</h2>
+          <form class="cta-ready__form cta-home-form" action="#" method="post" novalidate>
+            <label class="visually-hidden" for="cta-email">Email address</label>
+            <input
+              id="cta-email"
+              class="cta-ready__input"
+              type="email"
+              name="email"
+              placeholder="Enter email address"
+              aria-describedby="cta-help"
+            />
+            <button type="submit" class="cta-ready__button">
+              Schedule a Demo
+            </button>
+          </form>
+        </div>
+        <p id="cta-help" class="cta-ready__help cta-home-help" aria-live="polite">
+          Have any questions? <a>Contact Us</a>
+        </p>
+      </section>
     </header>
 
     <main>
