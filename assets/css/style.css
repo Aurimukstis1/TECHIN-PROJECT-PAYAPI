@@ -515,17 +515,17 @@ body {
     display: none;
   }
 
-.phone-mockup__prop {
-  height: 463px;
-  width: 385px;
-  align-self: center;
-  position: relative;
-  left: 30px;
-  font-family: "Public Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: normal;
-  font-style: normal;
-}
+  .phone-mockup__prop {
+    height: 463px;
+    width: 385px;
+    align-self: center;
+    position: relative;
+    left: 30px;
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+  }
 
   .home__article_easy-to-impl {
     display: none;
