@@ -777,6 +777,16 @@ header {
     margin: 8px 0px 0px 0px;
   }
 
+  .article_simple{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 150px 260px 0px 165px;
+    gap: 125px;
+    /* background-image: url(/assets/images/shared/desktop/bg-pattern-circle.svg); */
+  }
+
   .section__article-finance {
     flex-direction: row;
     justify-content: center;
