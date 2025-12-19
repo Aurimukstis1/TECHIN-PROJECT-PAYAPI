@@ -343,7 +343,15 @@ body {
   margin-right: auto;
   margin-top: 56px;
 }
-
+.header__backround {
+  display: flex;
+  justify-content: center;
+  background-image: url(../images/shared/desktop/bg-pattern-circle.svg);
+  background-repeat: no-repeat;
+  background-position: 50% -530px;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .start-building__prop {
   display: flex;
   justify-content: center;
