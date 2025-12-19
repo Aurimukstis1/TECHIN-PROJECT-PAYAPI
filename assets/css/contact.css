@@ -678,7 +678,7 @@ button:hover {
 
 @media screen and (max-width: 480px) {
     .contact-page-header {
-        margin-top: 60px;
+        margin-top: 0;
         font-size: 32px;
         line-height: 36px;
         margin-left: 24px;
