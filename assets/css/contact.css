@@ -4,6 +4,28 @@ body {
     margin: 0;
     background-color: #EDF3F8;
 }
+.circle__backround-style-contact{
+  display: flex;
+  justify-content: center;
+  background-image: url(../images/shared/desktop/bg-pattern-circle.svg);
+  background-repeat: no-repeat;
+  background-position: -21% -635px ;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.mobile__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 24.76px;
+  margin-right: 24px;
+  margin-top: 40.76px;
+   margin-bottom: 51.47px;
+}
+.tablet_navigation {
+  display: none;
+}
 
 .contact-page-header {
     margin-left: 165px;
@@ -239,6 +261,71 @@ button:hover {
 }
 
 @media screen and (min-width: 768px) {
+  .mobile__nav{
+    display: none;
+  }
+  .header__backround{
+    background: none;
+  }
+  .circle__backround-style-contact{
+    background-image: url(/assets/images/shared/desktop/bg-pattern-circle.svg);
+    background-repeat: no-repeat;
+    background-position: 495px -450px;
+  }
+  .tablet_navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 39.76px;
+    margin-right: 40px;
+    margin-top: 40px;
+    margin-bottom: 86.47px;
+  }
+  .logo_icon_tablet {
+    width: 135px;
+    height: 38px;
+  }
+
+  .tablet_nav {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+  .tablet_nav a {
+    font-family: "Public Sans";
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+    letter-spacing: 0px;
+    color: #36536b;
+    opacity: 0.7;
+  }
+
+  .tablet_nav a:hover {
+    color: #36536b;
+  }
+  .button_schedule-a-demo {
+    font-family: "Public Sans";
+    font-weight: 600;
+    font-size: 15px;
+    width: 173px;
+    height: 48px;
+    border-radius: 24px;
+    opacity: 1;
+    letter-spacing: -0.12px;
+    color: #fbfcfe;
+    opacity: 1;
+    background: #ba4270 0% 0% no-repeat padding-box;
+    border: none;
+    box-shadow: 10px 10px 20px #36536B40;
+  }
+  
+  .button_schedule-a-demo:hover {
+    background: #da6d97 0% 0% no-repeat padding-box;
+  }
   .contact-icons__grid {
       display: grid;
       place-items: center;
@@ -661,6 +748,11 @@ button:hover {
 }
 
 @media screen and (min-width: 1440px) {
+  .circle__backround-style-contact{
+    background-image: url(/assets/images/shared/desktop/bg-pattern-circle.svg);
+    background-repeat: no-repeat;
+    background-position: 800px -500px;
+  }
   footer {
     display: flex;
     flex-direction: row;

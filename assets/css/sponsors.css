@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 .sponsors {
+  margin-top: 100px;
   background: #fbfcfe;
   padding: 80px 24px;
   box-sizing: border-box;
@@ -69,7 +70,7 @@
   }
 .sponsors__lede {
   text-align: center;
-  font: normal normal 200 15px/28px Public Sans;
+  font: normal normal 200 15px/28px "Public Sans", sans-serif;
   letter-spacing: 0px;
   color: #FBFCFE;
   opacity: 0.7;

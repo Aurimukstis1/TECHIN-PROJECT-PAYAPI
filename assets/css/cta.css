@@ -2,6 +2,10 @@
 
 .cta-ready { background: #EDF3F8; padding: 48px 24px; }
 
+.cta-ready-home {
+  padding: 0;
+}
+
 .cta-ready__container {
   max-width: 1110px;
   margin: 0 auto;
@@ -9,6 +13,12 @@
   grid-template-columns: 1fr;
   gap: 24px;
   align-items: center;
+}
+
+.home-cta-container {
+  max-width: 100%;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 .cta-ready__title {
@@ -19,6 +29,11 @@
   text-align: center;
   font-size: 32px;
   margin: 0;
+}
+
+.home-cta-title {
+  font-size: 32px;
+  line-height: 36px;
 }
 
 .cta-ready__form {
@@ -32,14 +47,24 @@
   height: 48px;
   border: none;
   border-radius: 24px;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 17px;
   padding: 0 20px;
   color: #36536B;
   background: #FBFCFE;
   box-shadow: 10px 10px 25px rgba(54, 83, 107, 0.25), inset 0 0 0 1px rgba(54, 83, 107, 0.08);
 }
 
-.cta-ready__input::placeholder { color: rgba(54, 83, 107, 0.6); }
+.cta-ready__input::placeholder { color: rgba(54, 83, 107, 0.6); font-weight: bolder; }
 .cta-ready__input:focus { outline: 2px solid #BA4270; outline-offset: 2px; }
+
+.cta-input-home::placeholder {
+  font-family: "Public Sans", sans-serif;
+  color: #36536B;
+  opacity: 0.5;
+  font-weight: 800;
+}
 
 .cta-ready__button {
   height: 48px;
@@ -54,6 +79,12 @@
   cursor: pointer;
 }
 
+.cta-button-home {
+  font-style: "Public Sans", sans-serif;
+  font-size: 15px;
+  line-height: 17px;
+}
+
 .cta-ready__button:hover { background: #DA6D97; }
 .cta-ready__button:active { background: #902F59; }
 
@@ -63,17 +94,39 @@
   grid-column: 1 / -1;
   min-height: 1em;
   text-align: center;
-  color: #BA4270;
+  color: #6C8294;
   font-size: 14px;
+}
+
+.cta-home-help {
+  color: #6C8294;
+  font-family: "Public Sans", sans-serif;
+  font-size: 15px;
+  line-height: 17px;
+
+  & a {
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px solid;
+  }
 }
 
 /* Tablet: input and button side-by-side */
 @media (min-width: 768px) {
-  .cta-ready { padding: 56px 32px; }
+  .cta-ready { display: flex; width: 100%; flex-direction: column; align-items: center; box-sizing: border-box;}
+
+  .home-cta-container {
+    max-width: 573px;
+  }
 
   .cta-ready__title {
     font-size: 40px;
     text-align: center;
+  }
+
+  .home-cta-title {
+    font-size: 48px;
+    line-height: 56px;
   }
 
   /* Tablet: input extends under button */
@@ -84,6 +137,11 @@
     justify-content: center;
   }
 
+  .cta-home-form {
+    margin-left: 64px;
+    margin-right: 64px;
+  }
+
   .cta-ready__input {
     flex: 1 1 auto;
     height: 56px;
@@ -92,28 +150,65 @@
     box-shadow: 10px 10px 25px rgba(54, 83, 107, 0.25), inset 0 0 0 1px rgba(54, 83, 107, 0.08);
   }
 
+  .cta-input-home {
+    height: 48px;
+  }
+
   .cta-ready__button {
     position: absolute;
-    right: 8px;
+    right: 0px;
     height: 56px;
     border-radius: 999px;
     padding: 0 28px;
     white-space: nowrap;
   }
 
+  .cta-button-home {
+    height: 48px;
+  }
+
   .cta-ready__help { margin-top: 20px; }
+
+  .cta-home-help {
+    color: #6C8294;
+    font-family: "Public Sans", sans-serif;
+    font-size: 15px;
+    line-height: 17px;
+
+    & a {
+      font-weight: bold;
+      text-decoration: none;
+      border-bottom: 1px solid;
+    }
+  }
 }
 
 /* Desktop: title left, form right */
 @media (min-width: 1024px) {
   .cta-ready { padding: 64px 40px; }
 
+  .cta-ready-home {
+    padding: 0;
+  }
+
   .cta-ready__container {
     grid-template-columns: 1fr 540px;
     gap: 40px;
   }
 
+  .home-cta-container {
+    width: 546px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
   .cta-ready__title { text-align: left; font-size: 56px; }
+
+  .home-cta-title {
+    font-size: 72px;
+    line-height: 72px;
+  }
 
   /* Desktop: input extends under button */
   .cta-ready__form {
@@ -121,6 +216,11 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
+  }
+
+  .cta-home-form {
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   .cta-ready__input {
@@ -133,14 +233,25 @@
 
   .cta-ready__button {
     position: absolute;
-    right: 12px;
     height: 64px;
     border-radius: 999px;
     padding: 0 32px;
     white-space: nowrap;
   }
 
+  .cta-input-home {
+    height: 48px;
+  }
+  .cta-button-home {
+    height: 48px;
+  }
+
   .cta-ready__help { margin-top: 26px; }
+
+  .cta-home-help {
+    margin-left: 27px;
+    margin-right: 294px;
+  }
 }
 
 /* Remove old connected variant; unified approach above */
