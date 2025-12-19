@@ -26,7 +26,6 @@ body {
   display: none;
 }
 
-
 .about__h1-style{
     display: flex;
     justify-content: center;
@@ -193,7 +192,6 @@ body {
     margin-top: 40px;
     margin-bottom: 86.47px;
   }
-  
 
   .logo_icon_tablet {
     width: 135px;
