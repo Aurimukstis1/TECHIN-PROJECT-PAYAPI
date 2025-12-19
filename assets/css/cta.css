@@ -1,6 +1,9 @@
 /* CTA: Ready to start? */
 
-.cta-ready { background: #EDF3F8; padding: 48px 24px; }
+.cta-ready {
+  background: #edf3f8;
+  padding: 48px 24px;
+}
 
 .cta-ready-home {
   padding: 0;
@@ -22,7 +25,7 @@
 }
 
 .cta-ready__title {
-  color: #36536B;
+  color: #36536b;
   font-family: "DM Serif Display", serif;
   font-weight: 400;
   line-height: 1.1;
@@ -51,17 +54,24 @@
   font-size: 15px;
   line-height: 17px;
   padding: 0 20px;
-  color: #36536B;
-  background: #FBFCFE;
-  box-shadow: 10px 10px 25px rgba(54, 83, 107, 0.25), inset 0 0 0 1px rgba(54, 83, 107, 0.08);
+  color: #36536b;
+  background: #fbfcfe;
+  box-shadow: 10px 10px 25px rgba(54, 83, 107, 0.25),
+    inset 0 0 0 1px rgba(54, 83, 107, 0.08);
 }
 
-.cta-ready__input::placeholder { color: rgba(54, 83, 107, 0.6); font-weight: bolder; }
-.cta-ready__input:focus { outline: 2px solid #BA4270; outline-offset: 2px; }
+.cta-ready__input::placeholder {
+  color: rgba(54, 83, 107, 0.6);
+  font-weight: bolder;
+}
+.cta-ready__input:focus {
+  outline: 2px solid #ba4270;
+  outline-offset: 2px;
+}
 
 .cta-input-home::placeholder {
   font-family: "Public Sans", sans-serif;
-  color: #36536B;
+  color: #36536b;
   opacity: 0.5;
   font-weight: 800;
 }
@@ -71,8 +81,8 @@
   border: none;
   border-radius: 24px;
   padding: 0 24px;
-  background: #BA4270;
-  color: #FBFCFE;
+  background: #ba4270;
+  color: #fbfcfe;
   font-weight: 700;
   letter-spacing: 0.2px;
   box-shadow: none;
@@ -85,8 +95,12 @@
   line-height: 17px;
 }
 
-.cta-ready__button:hover { background: #DA6D97; }
-.cta-ready__button:active { background: #902F59; }
+.cta-ready__button:hover {
+  background: #da6d97;
+}
+.cta-ready__button:active {
+  background: #902f59;
+}
 
 .cta-ready__help {
   margin: 0;
@@ -94,12 +108,12 @@
   grid-column: 1 / -1;
   min-height: 1em;
   text-align: center;
-  color: #6C8294;
+  color: #6c8294;
   font-size: 14px;
 }
 
 .cta-home-help {
-  color: #6C8294;
+  color: #6c8294;
   font-family: "Public Sans", sans-serif;
   font-size: 15px;
   line-height: 17px;
@@ -113,7 +127,14 @@
 
 /* Tablet: input and button side-by-side */
 @media (min-width: 768px) {
-  .cta-ready { display: flex; width: 100%; flex-direction: column; align-items: center; box-sizing: border-box;}
+  .cta-ready {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    margin-top: -63px;
+  }
 
   .home-cta-container {
     max-width: 573px;
@@ -147,7 +168,8 @@
     height: 56px;
     border-radius: 999px;
     padding: 0 200px 0 24px; /* reserve space for overlapping button */
-    box-shadow: 10px 10px 25px rgba(54, 83, 107, 0.25), inset 0 0 0 1px rgba(54, 83, 107, 0.08);
+    box-shadow: 10px 10px 25px rgba(54, 83, 107, 0.25),
+      inset 0 0 0 1px rgba(54, 83, 107, 0.08);
   }
 
   .cta-input-home {
@@ -167,10 +189,12 @@
     height: 48px;
   }
 
-  .cta-ready__help { margin-top: 20px; }
+  .cta-ready__help {
+    margin-top: 20px;
+  }
 
   .cta-home-help {
-    color: #6C8294;
+    color: #6c8294;
     font-family: "Public Sans", sans-serif;
     font-size: 15px;
     line-height: 17px;
@@ -185,7 +209,9 @@
 
 /* Desktop: title left, form right */
 @media (min-width: 1024px) {
-  .cta-ready { padding: 64px 40px; }
+  .cta-ready {
+    padding: 64px 40px;
+  }
 
   .cta-ready-home {
     padding: 0;
@@ -203,7 +229,10 @@
     align-items: start;
   }
 
-  .cta-ready__title { text-align: left; font-size: 56px; }
+  .cta-ready__title {
+    text-align: left;
+    font-size: 56px;
+  }
 
   .home-cta-title {
     font-size: 72px;
@@ -228,7 +257,8 @@
     height: 64px;
     border-radius: 999px;
     padding: 0 240px 0 28px; /* reserve space for larger button */
-    box-shadow: 10px 10px 25px rgba(54, 83, 107, 0.25), inset 0 0 0 1px rgba(54, 83, 107, 0.08);
+    box-shadow: 10px 10px 25px rgba(54, 83, 107, 0.25),
+      inset 0 0 0 1px rgba(54, 83, 107, 0.08);
   }
 
   .cta-ready__button {
@@ -246,7 +276,9 @@
     height: 48px;
   }
 
-  .cta-ready__help { margin-top: 26px; }
+  .cta-ready__help {
+    margin-top: 26px;
+  }
 
   .cta-home-help {
     margin-left: 27px;
@@ -259,7 +291,8 @@
 /* Accessibility */
 .visually-hidden {
   position: absolute !important;
-  height: 1px; width: 1px;
+  height: 1px;
+  width: 1px;
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
   white-space: nowrap;
