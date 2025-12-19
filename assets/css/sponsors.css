@@ -147,7 +147,7 @@
     height: 640px;
     background-image: url(/assets/images/shared/mobile/curve-top-large.svg);
     background-repeat: no-repeat;
-    background-position: 50% -390px;
+    background-position: 50% -360px;
     pointer-events: none;
     z-index: 0;
   }
