@@ -29,7 +29,7 @@ body {
 
 .contact-page-header {
     margin-left: 165px;
-    margin-top: 80px;
+    /* margin-top: 80px; */
     width: 730px;
     font-family: "DM Serif Display", serif;
     font-weight: 400;
@@ -270,8 +270,9 @@ button:hover {
   .circle__backround-style-contact{
     background-image: url(/assets/images/shared/desktop/bg-pattern-circle.svg);
     background-repeat: no-repeat;
-    background-position: 495px -450px;
+    background-position: 490px -490px;
   }
+  
   .tablet_navigation {
     display: flex;
     flex-direction: row;
@@ -294,7 +295,7 @@ button:hover {
     align-items: center;
     margin-right: 20px;
   }
-
+  
   .tablet_nav a {
     font-family: "Public Sans";
     font-weight: 700;
@@ -612,7 +613,7 @@ button:hover {
 
 @media screen and (max-width: 768px) {
     .contact-page-header {
-        margin-top: 80px;
+        /* margin-top: 80px; */
         font-size: 48px;
         line-height: 56px;
         margin-left: 97px;
@@ -620,6 +621,7 @@ button:hover {
         max-width: 573px;
         max-height: 178px;
         text-align: center;
+        letter-spacing: -0.37px;
     }
 
     .contact-icons__grid {
