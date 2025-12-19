@@ -219,6 +219,7 @@ body {
 
   .tablet_nav a:hover {
     color: #36536b;
+    opacity: 1;
   }
   .button_schedule-a-demo {
     font-family: "Public Sans";
@@ -408,6 +409,7 @@ body {
   }
 
   .tablet_nav a:hover {
+    color: #36536B;
     opacity: 1;
   }
 
