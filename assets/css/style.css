@@ -505,6 +505,10 @@ body {
   .home__article_easy-to-impl_desktop {
     display: none;
   }
+
+  .home__article_simple-desktop {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -589,12 +593,11 @@ body {
     margin: 8px 0px 0px 0px;
   }
 
-  .home__article_simple-img{
+  .home__article_simple-img {
     margin-top: 50px;
     display: block;
     margin-left: 152px;
     margin-right: auto;
-    
   }
 
   .home__article_simple {
@@ -617,6 +620,10 @@ body {
     opacity: 1;
     margin: 0px;
     line-height: 56px;
+  }
+
+  .home__article_simple-desktop {
+    display: none;
   }
 
   .section__article-finance {
@@ -689,7 +696,7 @@ body {
     box-shadow: 10px 10px 20px #36536B40;
     cursor: pointer;
   }
-  
+
   .button_schedule-a-demo:hover {
     background: #da6d97 0% 0% no-repeat padding-box;
   }
@@ -824,14 +831,72 @@ body {
     margin: 8px 0px 0px 0px;
   }
 
-  .article_simple{
+  .article_simple {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 150px 260px 0px 165px;
     gap: 125px;
-    /* background-image: url(/assets/images/shared/desktop/bg-pattern-circle.svg); */
+    position: relative;
+    overflow: hidden;
+  }
+
+  .article_simple::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* right: -1200px; */
+    top: 0%;
+    right: 0px;
+    background-image: url(/assets/images/shared/desktop/bg-pattern-circle.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 0;
+  }
+
+  .home__article_simple-desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 165px;
+  }
+
+  .home__article_simple {
+    display: none;
+  }
+
+  .home__article_simple-heading {
+    font-family: "DM Serif Display", serif;
+    font-size: 48px;
+    text-align: left;
+    letter-spacing: -0.37px;
+    color: #36536b;
+    opacity: 1;
+    margin: 0px;
+    line-height: 56px;
+  }
+
+  .home__article_simple-text {
+    text-align: left;
+    font-family: "Public Sans", sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+    letter-spacing: 0px;
+    color: #6c8294;
+    opacity: 1;
+    line-height: 28px;
+    margin: 8px 0px 0px 0px;
+    width: 445px;
+    height: 45px;
+  }
+
+  .home__article_simple-img {
+    width: 100%;
+    position: relative;
+    right: 250px;
+    z-index: 2;
   }
 
   .section__article-finance {
@@ -851,7 +916,10 @@ body {
     color: #6c8294;
     opacity: 1;
   }
-  
+
+  .home__img-finances {
+    margin-top: 0px;
+  }
 
   footer {
     display: flex;
