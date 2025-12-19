@@ -457,10 +457,14 @@ body {
   }
 
   .footer-hyperlinks {
-    text-decoration: none;
-    color: #b7bcc0;
+    text-align: center;
+    font-size: 17px;
+    letter-spacing: 0px;
+    color: #FBFCFE;
+    opacity: 0.7;
     font-family: "Public Sans", sans-serif;
-    font-weight: bold;
+    font-weight: 650;
+    text-decoration: none;
   }
 
   .footer-hyperlinks__alignment {
@@ -472,7 +476,7 @@ body {
   }
 
   .footer-hyperlinks:hover {
-    color: #ffffff;
+    opacity: 1;
   }
 
   .footer-socials {
@@ -708,8 +712,9 @@ body {
     background-color: #1b262f;
     background-image: url("../images/shared/desktop/bg-pattern-circle.svg");
     background-repeat: no-repeat;
-    background-position: 385px 20%;
-    padding-top: 41px;
+    background-position: 372px 20%;
+    padding-top: 33px;
+    padding-bottom: 26px;
   }
 
   .footer_social-media__nav {
@@ -718,19 +723,25 @@ body {
     justify-content: center;
     margin-right: 40px;
     gap: 24px;
+    padding-bottom: 0;
   }
 
   .logo-footer {
     width: 135px;
     height: 38px;
+    margin-bottom: 0;
+    margin-right: 0;
   }
 
   .footer-hyperlinks {
-    text-decoration: none;
-    color: #b7bcc0;
-    font-family: "Public Sans", sans-serif;
-    font-weight: bold;
+    text-align: left;
     font-size: 17px;
+    letter-spacing: 0px;
+    color: #FBFCFE;
+    opacity: 0.7;
+    font-family: "Public Sans", sans-serif;
+    font-weight: 650;
+    text-decoration: none;
     margin-top: 10px;
   }
 
@@ -743,7 +754,7 @@ body {
   }
 
   .footer-hyperlinks:hover {
-    color: #ffffff;
+    opacity: 1;
   }
 
   .footer-socials {
@@ -928,9 +939,9 @@ body {
     background-color: #1b262f;
     background-image: url("../images/shared/desktop/bg-pattern-circle.svg");
     background-repeat: no-repeat;
-    background-position: 1000px -100px;
-    padding-top: 41px;
-    padding-bottom: 36px;
+    background-position: 155% -100px;
+    padding-top: 33px;
+    padding-bottom: 26px;
   }
 
   .footer_social-media__nav {
@@ -945,17 +956,21 @@ body {
   .logo-footer {
     width: 135px;
     height: 38px;
-    margin-left: 164.76px;
+    margin-left: 123.76px;
     margin-right: 24.34px;
+    margin-bottom: 0;
   }
 
   .footer-hyperlinks {
-    text-decoration: none;
-    color: #b7bcc0;
-    font-family: "Public Sans", sans-serif;
-    font-weight: bold;
-    font-size: 17px;
+    text-align: left;
     margin-top: 10px;
+    font-size: 17px;
+    letter-spacing: 0px;
+    color: #FBFCFE;
+    opacity: 0.7;
+    font-family: "Public Sans", sans-serif;
+    font-weight: 650;
+    text-decoration: none;
   }
 
   .footer-hyperlinks__alignment {
@@ -967,7 +982,7 @@ body {
   }
 
   .footer-hyperlinks:hover {
-    color: #ffffff;
+    opacity: 1;
   }
 
   .footer-socials {
