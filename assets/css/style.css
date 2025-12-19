@@ -5,6 +5,10 @@ body {
   background-color: #edf3f8;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 .mobile__nav {
   display: flex;
   flex-direction: row;
@@ -339,7 +343,6 @@ body {
   margin-right: auto;
   margin-top: 56px;
 }
-
 .header__backround {
   display: flex;
   justify-content: center;
@@ -383,17 +386,6 @@ body {
 .schedule-demo:hover {
   background-color: #da6d97;
 }
-.phone-mockup__prop {
-  height: 400px;
-  width: 285px;
-  align-self: center;
-  position: relative;
-  left: 35px;
-  font-family: "Public Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: normal;
-  font-style: normal;
-}
 .enter-email {
   padding: 12px 12px 12px 25px;
   border: none;
@@ -410,6 +402,28 @@ body {
 @media screen and (min-width: 375px) {
   .mobile__nav {
     display: flex;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/shared/desktop/bg-pattern-circle.svg);
+    background-repeat: no-repeat;
+    background-position: 50% -530px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+.phone-mockup__prop {
+  height: 400px;
+  width: 285px;
+  align-self: center;
+  position: relative;
+  left: 35px;
+  font-family: "Public Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
   }
 
   footer {
@@ -494,8 +508,31 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/shared/desktop/bg-pattern-circle.svg);
+    background-repeat: no-repeat;
+    background-position: 50% -660px;
+    background-size: 950px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
   .mobile__nav {
     display: none;
+  }
+
+  .phone-mockup__prop {
+    height: 463px;
+    width: 385px;
+    align-self: center;
+    position: relative;
+    left: 30px;
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
   }
 
   .home__article_easy-to-impl {
@@ -628,12 +665,12 @@ body {
     font-size: 15px;
     text-decoration: none;
     letter-spacing: 0px;
-    color: #36536b;
+    color: #36536B;
     opacity: 0.7;
   }
 
   .tablet_nav a:hover {
-    color: #36536b;
+    opacity: 1;
   }
 
   .button_schedule-a-demo {
@@ -650,6 +687,7 @@ body {
     background: #ba4270 0% 0% no-repeat padding-box;
     border: none;
     box-shadow: 10px 10px 20px #36536B40;
+    cursor: pointer;
   }
   
   .button_schedule-a-demo:hover {
