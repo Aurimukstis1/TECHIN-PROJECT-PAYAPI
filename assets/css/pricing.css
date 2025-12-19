@@ -15,6 +15,7 @@ body {
   justify-content: space-between;
 }
 
+
 .mobile__nav {
   display: flex;
   flex-direction: row;
