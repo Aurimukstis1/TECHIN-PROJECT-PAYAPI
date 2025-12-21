@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-body {
+body, html {
     margin: 0;
     background-color: #EDF3F8;
+    overflow-x: hidden;
 }
 .circle__backround-style-contact{
   display: flex;
@@ -53,7 +54,7 @@ body {
 
 /*Form style*/
 
-input,
+.contact-form__input,
 textarea {
   background: transparent;
   border: none;
@@ -65,7 +66,7 @@ textarea {
   color: #2c3e50;
 }
 
-input::placeholder,
+.contact-form__input::placeholder,
 textarea::placeholder {
   text-align: left;
   font: normal normal 200 15px/25px Public Sans;
@@ -74,7 +75,7 @@ textarea::placeholder {
   opacity: 0.5;
 }
 
-input:focus,
+.contact-form__input:focus,
 textarea:focus {
   outline: none;
   border-bottom-color: #2c3e50;
@@ -159,7 +160,7 @@ textarea {
 
 /*button style*/
 
-button {
+.submission-button {
   width: 152px;
   height: 48px;
   padding-left: 51px;
@@ -179,7 +180,7 @@ button {
   color: #36536B;
 }
 
-button:hover {
+.submission-button:hover {
   background: #36536B;
   color: white;
 }
@@ -415,7 +416,7 @@ button:hover {
 
   /*Form style*/
 
-  input,
+  .contact-form__input,
   textarea {
     background: transparent;
     border: none;
@@ -427,7 +428,7 @@ button:hover {
     color: #2c3e50;
   }
 
-  input::placeholder,
+  .contact-form__input::placeholder,
   textarea::placeholder {
     text-align: left;
     font: normal normal 200 15px/25px Public Sans;
@@ -436,7 +437,7 @@ button:hover {
     opacity: 0.5;
   }
 
-  input:focus,
+  .contact-form__input:focus,
   textarea:focus {
     outline: none;
     border-bottom-color: #2c3e50;
@@ -518,7 +519,7 @@ button:hover {
 
   /*button style*/
 
-  button {
+  .submission-button {
     width: 152px;
     height: 48px;
     padding-left: 51px;
@@ -538,7 +539,7 @@ button:hover {
     color: #36536B;
   }
 
-  button:hover {
+  .submission-button:hover {
     background: #36536B;
     color: white;
   }
