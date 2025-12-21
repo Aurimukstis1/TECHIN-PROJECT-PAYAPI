@@ -5,8 +5,13 @@ body {
   background-color: #edf3f8;
 }
 
-.pointer {
+.contact-us_style {
+  color: #36536B;
   cursor: pointer;
+}
+
+.contact-us_style:visited {
+  color: #36536B;
 }
 
 .mobile__nav {
@@ -343,15 +348,6 @@ body {
   margin-right: auto;
   margin-top: 56px;
 }
-.header__backround {
-  display: flex;
-  justify-content: center;
-  background-image: url(../images/shared/desktop/bg-pattern-circle.svg);
-  background-repeat: no-repeat;
-  background-position: 50% -660px;
-  flex-direction: column;
-  justify-content: space-between;
-}
 .start-building__prop {
   display: flex;
   justify-content: center;
@@ -404,26 +400,26 @@ body {
     display: flex;
   }
 
-  header {
+  .header__backround {
     display: flex;
     justify-content: center;
     background-image: url(../images/shared/desktop/bg-pattern-circle.svg);
     background-repeat: no-repeat;
-    background-position: 50% -530px;
+    background-position: 50% -660px;
     flex-direction: column;
     justify-content: space-between;
   }
 
-.phone-mockup__prop {
-  height: 400px;
-  width: 285px;
-  align-self: center;
-  position: relative;
-  left: 35px;
-  font-family: "Public Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: normal;
-  font-style: normal;
+  .phone-mockup__prop {
+    height: 400px;
+    width: 285px;
+    align-self: center;
+    position: relative;
+    left: 35px;
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
   }
 
   footer {
@@ -516,7 +512,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  header {
+  .header__backround {
     display: flex;
     justify-content: center;
     background-image: url(../images/shared/desktop/bg-pattern-circle.svg);
@@ -781,6 +777,31 @@ body {
 }
 
 @media screen and (min-width: 1440px) {
+  .header__backround {
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/shared/desktop/bg-pattern-circle.svg);
+    background-repeat: no-repeat;
+    background-position: 120% -180px;
+    background-size: 750px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .phone-mockup__prop {
+    height: 834px;
+    width: 760px;
+    align-self: center;
+    position: relative;
+    /* top: 0px; */
+    left: 410px;
+    bottom: 60px;
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+  }
+
 .mobile__nav {
     display: none;
   }
