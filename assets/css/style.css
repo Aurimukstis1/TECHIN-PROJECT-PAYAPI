@@ -400,26 +400,26 @@ body {
     display: flex;
   }
 
-.header__backround {
-  display: flex;
-  justify-content: center;
-  background-image: url(../images/shared/desktop/bg-pattern-circle.svg);
-  background-repeat: no-repeat;
-  background-position: 50% -660px;
-  flex-direction: column;
-  justify-content: space-between;
-}
+  .header__backround {
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/shared/desktop/bg-pattern-circle.svg);
+    background-repeat: no-repeat;
+    background-position: 50% -660px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
-.phone-mockup__prop {
-  height: 400px;
-  width: 285px;
-  align-self: center;
-  position: relative;
-  left: 35px;
-  font-family: "Public Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: normal;
-  font-style: normal;
+  .phone-mockup__prop {
+    height: 400px;
+    width: 285px;
+    align-self: center;
+    position: relative;
+    left: 35px;
+    font-family: "Public Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
   }
 
   footer {
