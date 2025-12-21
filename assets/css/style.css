@@ -417,9 +417,10 @@ body, html {
   }
 
   .phone-mockup__prop {
+    filter: drop-shadow(25px 25px 80px #36536B4D);
     height: 250px;
     width: 120px;
-    margin-bottom: 30px;
+    margin-top: 30px;
     align-self: center;
     position: relative;
     font-family: "Public Sans", sans-serif;
