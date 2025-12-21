@@ -196,6 +196,7 @@ body {
   .logo_icon_tablet {
     width: 135px;
     height: 38px;
+    padding-top: 5px;
   }
 
   .tablet_nav {
@@ -218,6 +219,7 @@ body {
 
   .tablet_nav a:hover {
     color: #36536b;
+    opacity: 1;
   }
   .button_schedule-a-demo {
     font-family: "Public Sans";
@@ -367,6 +369,78 @@ body {
 }
 
 @media screen and (min-width: 1440px) {
+
+  .mobile__nav {
+    display: none;
+  }
+
+.tablet_navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 165.76px;
+    margin-right: 165px;
+    margin-top: 40px;
+  }
+
+  .logo_icon_tablet {
+    width: 133.9px;
+    height: 36.77px;
+    padding-top: 5px;
+  }
+
+    .tablet_nav {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    margin-right: 506px;
+    margin-left: 64.34px;
+  }
+
+  .tablet_nav a {
+    font-family: "Public Sans";
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+    letter-spacing: 0px;
+    color: #36536B;
+    opacity: 0.7;
+  }
+
+  .tablet_nav a:hover {
+    color: #36536B;
+    opacity: 1;
+  }
+
+  .button_schedule-a-demo {
+    font-family: "Public Sans";
+    font-weight: 600;
+    font-size: 15px;
+    width: 173px;
+    height: 48px;
+    border-radius: 24px;
+    opacity: 1;
+    letter-spacing: -0.12px;
+    color: #fbfcfe;
+    opacity: 1;
+    background: #ba4270 0% 0% no-repeat padding-box;
+    border: none;
+    box-shadow: 10px 10px 20px #36536B40;
+    cursor: pointer;
+    padding-top: 16px;
+    padding-right: 24.5px;
+    padding-bottom: 15px;
+    padding-left: 26.5px;
+     display: flex;
+  align-items: center;
+  justify-content: center;
+   white-space: nowrap;
+  }
+
+  .button_schedule-a-demo:hover {
+    background: #da6d97 0% 0% no-repeat padding-box;
+  }
   .circle__backround-style-about{
     background-image: url(/assets/images/shared/desktop/bg-pattern-circle.svg);
     background-repeat: no-repeat;
