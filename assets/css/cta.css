@@ -231,7 +231,7 @@
 @media (min-width: 1440px) {
   .cta-ready {
     /* padding: 64px 40px; */
-
+    margin-top: 90px;
   }
 
   .cta-ready-home {
