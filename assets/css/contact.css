@@ -362,6 +362,9 @@ textarea {
       grid-column-end: 4;
       place-self: center start;
       margin-right: 30px;
+      font-family: "DM Serif Display", serif;
+      font-weight: 550;
+
   }
 
   .microsoft-size {
@@ -645,6 +648,9 @@ textarea {
         grid-column-start: 1;
         grid-column-end: 4;
         place-self: center;
+        font-family: "DM Serif Display", serif;
+        font-size: 24px;
+        font-weight: 550;
     }
 
     #big {
@@ -716,6 +722,10 @@ textarea {
         grid-column-start: 1;
         grid-column-end: 3;
         place-self: center;
+        font-family: "DM Serif Display", serif;
+        font-size: 24px;
+        font-weight: 550;
+
     }
     
     #big {
